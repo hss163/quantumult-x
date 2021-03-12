@@ -22,3 +22,13 @@ host-SUFFIX, api3-normal-c-*.huoshan.com, direct
 host-SUFFIX, veishop.iboxpay.com, direct
 host-SUFFIX, bububao.duoshoutuan.com, direct
 host-SUFFIX, pingyouquan.com, direct
+host-SUFFIX, ocean.shuqireader.com, direct
+host-SUFFIX, api-access.pangolin-sdk-toutiao-b.com, direct
+host-SUFFIX, api-access.pangolin-sdk-toutiao.com, direct
+host-SUFFIX, * .snssdk.com, direct
+host-SUFFIX, huodong.fanli.com, direct
+host-SUFFIX, passport.fanli.com, direct
+host-SUFFIX, gw.fanli.com, direct
+host-SUFFIX, render.shuqireader.com, direct
+host-SUFFIX, jcollection.shuqireader.com, direct
+host-SUFFIX, activity-center-web.shuqireader.com, direct
