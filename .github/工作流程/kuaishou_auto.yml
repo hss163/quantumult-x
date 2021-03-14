@@ -1,0 +1,38 @@
+＃快手視頻刷金幣測試，抓包獲取秘密
+
+名稱：快手視頻瀏覽
+
+於：
+  workflow_dispatch：
+  時間表：
+     - cron的：' * / 30 0-14 * * * “
+  觀看：
+    類型：開始
+職位：
+  建立：
+    運行：ubuntu-latest
+    如果：github.event.repository.owner.id == github.event.sender.id
+    env：
+        KUAISHOUMV：$ {{ secrets.KUAISHOUMV }}
+        TZ：亞洲/上海
+    步驟：
+      -名稱：結帳
+        運行：|
+          git clone https://github.com/Sunert/Scripts.git〜/ Scripts
+      -名稱：使用Node.js 12.x
+        用途：actions / setup-node @ v1
+        與：
+          節點版本：12.x
+      -名稱：npm install
+        運行：|
+          cd〜/腳本
+          npm安裝
+      -名稱：'運行【快手視頻】'
+        如果：env.KUAISHOUMV
+        運行：|
+          cd〜/腳本
+          節點Task / Auto_Kuaishou.js
+        env：
+          PUSH_KEY：$ {{ secrets.PUSH_KEY }}
+          TG_BOT_TOKEN：$ {{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID：$ {{ secrets.TG_USER_ID }}
