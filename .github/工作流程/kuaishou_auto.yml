@@ -1,38 +1,42 @@
-＃快手視頻刷金幣測試，抓包獲取秘密
+# 快手视频刷金币测试，抓包获取secrets
 
-名稱：快手視頻瀏覽
+name: 快手视频浏览
 
-於：
-  workflow_dispatch：
-  時間表：
-     - cron的：' * / 30 0-14 * * * “
-  觀看：
-    類型：開始
-職位：
-  建立：
-    運行：ubuntu-latest
-    如果：github.event.repository.owner.id == github.event.sender.id
-    env：
-        KUAISHOUMV：$ {{ secrets.KUAISHOUMV }}
-        TZ：亞洲/上海
-    步驟：
-      -名稱：結帳
-        運行：|
-          git clone https://github.com/Sunert/Scripts.git〜/ Scripts
-      -名稱：使用Node.js 12.x
-        用途：actions / setup-node @ v1
-        與：
-          節點版本：12.x
-      -名稱：npm install
-        運行：|
-          cd〜/腳本
-          npm安裝
-      -名稱：'運行【快手視頻】'
-        如果：env.KUAISHOUMV
-        運行：|
-          cd〜/腳本
-          節點Task / Auto_Kuaishou.js
-        env：
-          PUSH_KEY：$ {{ secrets.PUSH_KEY }}
-          TG_BOT_TOKEN：$ {{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID：$ {{ secrets.TG_USER_ID }}
+on:
+  workflow_dispatch:
+  schedule:
+     - cron: '*/30 2,8,16 * * *'
+  watch:
+    types: started
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    env:
+        KUAISHOUMV: ${{ secrets.KUAISHOUMV }}
+        TZ: Asia/shanghai
+    steps:
+      - name: Checkout
+        run: |
+          git clone https://github.com/Sunert/Scripts.git ~/Scripts
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: npm install
+        run: |
+          cd ~/Scripts
+          npm install
+      - name: '运行 【快手视频】'
+        if: env.KUAISHOUMV
+        run: |
+          cd ~/Scripts
+          node Task/Auto_Kuaishou.js
+        env:
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
