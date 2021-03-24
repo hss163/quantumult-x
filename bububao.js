@@ -6,7 +6,7 @@ boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThx
 
 转载请备注个名字，谢谢
 
-?步步宝
+⚠️步步宝
 点击 http://bububao.yichengw.cn/?id=529742 下载APP  谢谢支持
 
 
@@ -24,7 +24,7 @@ boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThx
 3.13 修复0.3提现
 3.23 设置CASH为1000以上时则在23.59分执行1秒的循环提现，以此类推
 
-? 时间设置    0,30 0-23 * * *    每天 35次以上就行   
+⚠️ 时间设置    0,30 0-23 * * *    每天 35次以上就行   
 
  
 一 视频助力手动也是不行的 
@@ -33,21 +33,21 @@ boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThx
 (已内置随机udid，添加重写无视多设备检测，如非必要，勿频繁登录)
 
 
-?一共1个位置 1个ck   2条 Secrets 
+⚠️一共1个位置 1个ck  👉 2条 Secrets 
 多账号换行
 
 第一步 添加  hostname=bububao.duoshoutuan.com,
 
-第二步 ?添加步步宝获取TOKEN重写  
+第二步 ⚠️添加步步宝获取TOKEN重写  
 
 登录步步宝  获取token
-bububaotokenVal BBB_bububaoTOKEN
+bububaotokenVal 👉BBB_bububaoTOKEN
 
 
-CASH    BBB_CASH     可设置0 0.3 50 100 200 888  默认0关闭提现，设置888由上至下循环提现
+CASH  👉  BBB_CASH     可设置0 0.3 50 100 200 888  默认0关闭提现，设置888由上至下循环提现
 
 
-?主机名以及重写
+⚠️主机名以及重写👇
 hostname=bububao.duoshoutuan.com,
 
 ############## 圈x
@@ -62,15 +62,15 @@ http-response https:\/\/bububao\.duoshoutuan\.com\/user\/* script-path=https://r
 #步步宝获取TOKEN
 步步宝获取TOKEN = type=http-response,pattern=https:\/\/bububao\.duoshoutuan\.com\/user\/*,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/bububao.js
 */
-GXRZ = &apos;3.23 设置CASH为1000则在23.59分执行1秒的50元循环提现，以此类推&apos;
-const $ = Env(&quot;步步宝&quot;);
-$.idx = ($.idx = ($.getval(&apos;bububaoSuffix&apos;) || &apos;1&apos;) - 1) > 0 ? ($.idx + 1 + &apos;&apos;) : &apos;&apos;; // 账号扩展字符
-const notify = $.isNode() ? require(&quot;./sendNotify&quot;) : ``;
-const COOKIE = $.isNode() ? require(&quot;./bububaoCOOKIE&quot;) : ``;
+GXRZ = '3.23 设置CASH为1000则在23.59分执行1秒的50元循环提现，以此类推'
+const $ = Env("步步宝");
+$.idx = ($.idx = ($.getval('bububaoSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
+const notify = $.isNode() ? require("./sendNotify") : ``;
+const COOKIE = $.isNode() ? require("./bububaoCOOKIE") : ``;
 const logs = 0; // 0为关闭日志，1为开启
 const notifyttt = 1 // 0为关闭外部推送，1为12 23 点外部推送
 const notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
-$.message = &apos;&apos;, COOKIES_SPLIT = &apos;&apos;, CASH = &apos;&apos;, ddtime = &apos;&apos;;
+$.message = '', COOKIES_SPLIT = '', CASH = '', ddtime = '';
 CZ = 10
 const bububaotokenArr = [];
 let bububaotokenVal = ``;
@@ -80,7 +80,7 @@ if ($.isNode()) {
     CASH = process.env.BBB_CASH || 0;
 }
 if ($.isNode() && process.env.BBB_bububaoTOKEN) {
-    COOKIES_SPLIT = process.env.COOKIES_SPLIT || &quot;\n&quot;;
+    COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
     console.log(
         `============ cookies分隔符为：${JSON.stringify(
       COOKIES_SPLIT
@@ -97,7 +97,7 @@ if ($.isNode() && process.env.BBB_bububaoTOKEN) {
 }
 if (COOKIE.bububaotokenVal) {
     BBB_COOKIES = {
-        &quot;bububaotokenVal&quot;: COOKIE.bububaotokenVal.split(&apos;\n&apos;),
+        "bububaotokenVal": COOKIE.bububaotokenVal.split('\n'),
     }
     Length = BBB_COOKIES.bububaotokenVal.length;
 }
@@ -109,48 +109,48 @@ if (!COOKIE.bububaotokenVal) {
             }
         });
     } else {
-        bububaotokenArr.push($.getdata(&quot;bububaotoken&quot;));
+        bububaotokenArr.push($.getdata("bububaotoken"));
         // 根据boxjs中设置的额外账号数，添加存在的账号数据进行任务处理
-        if (&quot;bububaoCASH&quot;) {
-            CASH = $.getval(&quot;bububaoCASH&quot;) || &apos;0&apos;;
+        if ("bububaoCASH") {
+            CASH = $.getval("bububaoCASH") || '0';
         }
-        let bububaoCount = ($.getval(&apos;bububaoCount&apos;) || &apos;1&apos;) - 0;
+        let bububaoCount = ($.getval('bububaoCount') || '1') - 0;
         for (let i = 2; i <= bububaoCount; i++) {
             if ($.getdata(`bububaotoken${i}`)) {
                 bububaotokenArr.push($.getdata(`bububaotoken${i}`));
             }
         }
     }
-    if (bububaotokenArr == &apos;&apos;) {
+    if (bububaotokenArr == '') {
         Length = 0
     } else Length = bububaotokenArr.length
 }
 
 function GetCookie() {
-    if ($request && $request.url.indexOf(&quot;login&quot;) >= 0) {
+    if ($request && $request.url.indexOf("login") >= 0) {
         modifiedHeaders = $request.headers;
-        modifiedHeaders[&apos;imei&apos;] = udid()
+        modifiedHeaders['imei'] = udid()
         console.log(JSON.stringify(modifiedHeaders));
         $done({
             headers: modifiedHeaders
         });
     }
-    if ($request && $request.url.indexOf(&quot;profile&quot;) >= 0) {
+    if ($request && $request.url.indexOf("profile") >= 0) {
         const bububaotokenVal = $request.headers.tokenstr;
 
         if (bububaotokenVal) {
             cookie()
 
             function cookie() {
-                bodys = $.getdata(&apos;bububaotoken&apos; + $.idx);
+                bodys = $.getdata('bububaotoken' + $.idx);
                 if (bodys) {
                     if (bodys.indexOf(bububaotokenVal) >= 0) {
                         $.log(
-                            `[${$.name + $.idx}] bububaotokenVal已存在?: bububaotokenVal: ${bububaotokenVal}`
+                            `[${$.name + $.idx}] bububaotokenVal已存在✅: bububaotokenVal: ${bububaotokenVal}`
                         );
-                        $.msg($.name + $.idx, `bububaotokenVal已存在: `, ``);
+                        $.msg($.name + $.idx, `bububaotokenVal已存在: 🎉`, ``);
                         $.done();
-                    } else if ($.idx == &apos;&apos;) {
+                    } else if ($.idx == '') {
                         $.idx = 2
                         cookie()
                     } else {
@@ -158,11 +158,11 @@ function GetCookie() {
                         cookie()
                     }
                 } else {
-                    $.setdata(bububaotokenVal, &quot;bububaotoken&quot; + $.idx);
+                    $.setdata(bububaotokenVal, "bububaotoken" + $.idx);
                     $.log(
-                        `[${$.name + $.idx}] 获取bububaotokenVal?: 成功,bububaotokenVal: ${bububaotokenVal}`
+                        `[${$.name + $.idx}] 获取bububaotokenVal✅: 成功,bububaotokenVal: ${bububaotokenVal}`
                     );
-                    $.msg($.name + $.idx, `获取bububaotokenVal: 成功`, ``);
+                    $.msg($.name + $.idx, `获取bububaotokenVal: 成功🎉`, ``);
 
                     $.done();
                 };
@@ -189,9 +189,9 @@ nowTimes = new Date(
     8 * 60 * 60 * 1000
 );
 //今天
-Y = nowTimes.getFullYear() + &apos;-&apos;;
-M = (nowTimes.getMonth() + 1 < 10 ? &apos;0&apos; + (nowTimes.getMonth() + 1) : nowTimes.getMonth() + 1) + &apos;-&apos;;
-D = (nowTimes.getDate() < 10 ? &apos;0&apos; + (nowTimes.getDate()) : nowTimes.getDate());
+Y = nowTimes.getFullYear() + '-';
+M = (nowTimes.getMonth() + 1 < 10 ? '0' + (nowTimes.getMonth() + 1) : nowTimes.getMonth() + 1) + '-';
+D = (nowTimes.getDate() < 10 ? '0' + (nowTimes.getDate()) : nowTimes.getDate());
 ddtime = Y + M + D;
 console.log(ddtime)
 //当前时间戳
@@ -226,11 +226,11 @@ function time(inputTime) {
     if ($.isNode()) {
         var date = new Date(inputTime + 8 * 60 * 60 * 1000);
     } else var date = new Date(inputTime);
-    Y = date.getFullYear() + &apos;-&apos;;
-    M = (date.getMonth() + 1 < 10 ? &apos;0&apos; + (date.getMonth() + 1) : date.getMonth() + 1) + &apos;-&apos;;
-    D = date.getDate() + &apos; &apos;;
-    h = date.getHours() + &apos;:&apos;;
-    m = date.getMinutes() + &apos;:&apos;;
+    Y = date.getFullYear() + '-';
+    M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+    D = date.getDate() + ' ';
+    h = date.getHours() + ':';
+    m = date.getMinutes() + ':';
     s = date.getSeconds();
     return Y + M + D + h + m + s;
 };
@@ -245,14 +245,14 @@ function timecs() {
 //随机udid 大写
 function udid() {
     var s = [];
-    var hexDigits = &quot;0123456789ABCDEF&quot;;
+    var hexDigits = "0123456789ABCDEF";
     for (var i = 0; i < 36; i++) {
         s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
     }
-    s[14] = &quot;4&quot;; // bits 12-15 of the time_hi_and_version field to 0010
+    s[14] = "4"; // bits 12-15 of the time_hi_and_version field to 0010
     s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1); // bits 6-7 of the clock_seq_hi_and_reserved to 01
-    s[8] = s[13] = s[18] = s[23] = &quot;-&quot;;
-    var uuid = s.join(&quot;&quot;);
+    s[8] = s[13] = s[18] = s[23] = "-";
+    var uuid = s.join("");
     return uuid;
 }
 //随机udid 小写
@@ -260,22 +260,22 @@ function udid2() {
     function S4() {
         return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
     }
-    return (S4() + S4() + &quot;-&quot; + S4() + &quot;-&quot; + S4() + &quot;-&quot; + S4() + &quot;-&quot; + S4() + S4() + S4());
+    return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
 }
 //编码
 function encodeUnicode(str) {
     var res = [];
     for (var i = 0; i < str.length; i++) {
-        res[i] = (&quot;00&quot; + str.charCodeAt(i).toString(16)).slice(-4);
+        res[i] = ("00" + str.charCodeAt(i).toString(16)).slice(-4);
     }
-    return &quot;\\u&quot; + res.join(&quot;\\u&quot;);
+    return "\\u" + res.join("\\u");
 }
 //解码
 function decodeUnicode(str) {
-    str = str.replace(/\\/g, &quot;%&quot;);
+    str = str.replace(/\\/g, "%");
     return unescape(str);
 }
-let isGetCookie = typeof $request !== &apos;undefined&apos;
+let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
     GetCookie()
     $.done();
@@ -289,7 +289,7 @@ if (isGetCookie) {
 
     })()
     .catch((e) => {
-            $.log(&apos;&apos;, ` ${$.name}, 失败! 原因: ${e}!`, &apos;&apos;)
+            $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
         })
         .finally(() => {
             $.done();
@@ -299,9 +299,9 @@ async function all() {
     if (!Length) {
         $.msg(
             $.name,
-            &apos;提示：?请点击前往获取http://bububao.yichengw.cn/?id=529742\n&apos;,
-            &apos;http://bububao.yichengw.cn/?id=529742&apos;, {
-                &quot;open-url&quot;: &quot;http://bububao.yichengw.cn/?id=529742&quot;
+            '提示：⚠️请点击前往获取http://bububao.yichengw.cn/?id=529742\n',
+            'http://bububao.yichengw.cn/?id=529742', {
+                "open-url": "http://bububao.yichengw.cn/?id=529742"
             }
         );
         return;
@@ -314,20 +314,20 @@ async function all() {
             bububaotokenVal = bububaotokenArr[i];
         }
         header = {
-            &apos;tokenstr&apos;: `${bububaotokenVal}`,
-            &apos;idfa&apos;: ``,
-            &apos;ini&apos;: `21`,
-            &apos;store&apos;: `0`,
-            &apos;Content-Type&apos;: `application/x-www-form-urlencoded`,
-            &apos;platform&apos;: `1`,
-            &apos;version&apos;: `18`,
-            &apos;imei&apos;: ``,
-            &apos;Cookie&apos;: ``,
-            &apos;Host&apos;: `bububao.duoshoutuan.com`,
-            &apos;Accept-Language&apos;: `zh-cn`,
-            &apos;Accept&apos;: `*/*`
+            'tokenstr': `${bububaotokenVal}`,
+            'idfa': ``,
+            'ini': `21`,
+            'store': `0`,
+            'Content-Type': `application/x-www-form-urlencoded`,
+            'platform': `1`,
+            'version': `18`,
+            'imei': ``,
+            'Cookie': ``,
+            'Host': `bububao.duoshoutuan.com`,
+            'Accept-Language': `zh-cn`,
+            'Accept': `*/*`
         };
-        O = (`${$.name + (i + 1)}`);
+        O = (`${$.name + (i + 1)}🔔`);
 
 
         if (CASH >= 1000&&nowTimes.getHours() === 23&&nowTimes.getMinutes() == 59) {
@@ -335,14 +335,14 @@ async function all() {
             B = Date.now() + CASH
             C= daytime()+86400000
             while (Date.now() <= B) {
-              if (Date.now() >= C&&Date.now() <= C+5) {
+              if (Date.now() >= C&&Date.now() <= C+1) {
                 CASH = 50
                  tixian()
              }
          }
 
         } else {
-            await console.log(`-------------------------\n\n开始运行【${$.name+(i+1)}】`)
+            await console.log(`-------------------------\n\n🔔开始运行【${$.name+(i+1)}】`)
             let cookie_is_live = await user(); //用户名
             if (!cookie_is_live) {
                 continue;
@@ -356,7 +356,7 @@ async function all() {
                 await dk_info() //打卡
                 await cy_info() //答题
                 await water_info() //喝水
-                await sleep_info() /觉
+                await sleep_info() //睡觉
                 await ggk() //刮刮卡
                 await $.wait(8000)
                 await lucky() //转盘抽奖
@@ -382,7 +382,7 @@ async function all() {
 function msgShow() {
     return new Promise(async resolve => {
         if (notifyInterval != 1) {
-            console.log($.name + &apos;\n&apos; + $.message);
+            console.log($.name + '\n' + $.message);
         }
         if (notifyInterval == 1) {
             $.msg($.name, ``, $.message);
@@ -408,7 +408,7 @@ function user(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 用户名??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 用户名🚩: ${decodeUnicode(data)}`);
                     $.user = JSON.parse(data);
                     if ($.user.uid) {
                         console.log(`\n${O}\n========== ${$.user.username} ==========\n微信绑定：${$.user.wx_username},今日收益：${$.user.day_jinbi/10000}元\n现金余额：${$.user.money}元,累计收益：${$.user.leiji_jinbi/10000}元,今日步数：${$.user.steps}步\n`)
@@ -416,9 +416,9 @@ function user(timeout = 0) {
                         resolve(true);
                     }
                     if (!$.user.uid) {
-                        $.msg(O, time(Number(tts())) + &quot;COOKIE失效&quot;);
+                        $.msg(O, time(Number(tts())) + "❌❌❌COOKIE失效");
                         if ($.isNode()) {
-                            notify.sendNotify(O, time(Number(tts())) + &quot;COOKIE失效&quot;);
+                            notify.sendNotify(O, time(Number(tts())) + "❌❌❌COOKIE失效");
                         }
                         resolve(false);
                     }
@@ -444,11 +444,11 @@ function userjinbi(timeout = 0) {
                 }
                 $.post(url, async (err, resp, data) => {
                     try {
-                        if (logs) $.log(`${O}, 收益记录??: ${decodeUnicode(data)}`);
+                        if (logs) $.log(`${O}, 收益记录🚩: ${decodeUnicode(data)}`);
                         $.userjinbi = JSON.parse(data);
 
                         if ($.userjinbi && $.userjinbi[0].add_date) {
-                            newtime = $.userjinbi[0].add_date + &apos;T&apos; + $.userjinbi[0].add_time
+                            newtime = $.userjinbi[0].add_date + 'T' + $.userjinbi[0].add_time
                             CZ = ((tts() - timecs(newtime)) / 60000).toFixed(0)
 
                             console.log(`收益记录：距离上次收益${CZ}分钟，已限速10分钟\n`);
@@ -480,7 +480,7 @@ function home(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 首页信息??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 首页信息🚩: ${decodeUnicode(data)}`);
                     $.home = JSON.parse(data);
                     if ($.home.right_jinbi) {
                         console.log(`首页信息：金币：${$.home.right_jinbi}金币,红包：${$.home.hb_jinbi}金币\n`);
@@ -534,7 +534,7 @@ function donejin(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 步数奖励??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 步数奖励🚩: ${decodeUnicode(data)}`);
                     $.donejin = JSON.parse(data);
                     if ($.donejin.code == 1) {
                         console.log(`步数奖励：${$.donejin.tip},${$.donejin.msg}\n`);
@@ -561,7 +561,7 @@ function collsteps(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 步数金币??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 步数金币🚩: ${decodeUnicode(data)}`);
                     $.collsteps = JSON.parse(data);
                     if ($.collsteps.code == 1) {
                         console.log(`步数金币：${$.collsteps.jinbi}金币,${$.collsteps.msg}\n`);
@@ -586,9 +586,9 @@ function step7(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 7天达标??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 7天达标🚩: ${decodeUnicode(data)}`);
                     $.step7 = JSON.parse(data);
-                    if (data.match(/month_day/g) && !data.match(/&quot;is_dabiao&quot;: 0/g)) {
+                    if (data.match(/month_day/g) && !data.match(/"is_dabiao": 0/g)) {
                         console.log(`7天达标：已达标\n`);
                         $.message += `【7天达标】：已达标\n`;
                     }
@@ -612,7 +612,7 @@ function callback(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 附加处理??:${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 附加处理🚩:${decodeUnicode(data)}`);
                     $.callback = JSON.parse(data);
                     if ($.callback.code == 1) {
                         console.log(`附加处理：成功\n`);
@@ -638,7 +638,7 @@ function chuansj(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 前置处理??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 前置处理🚩: ${decodeUnicode(data)}`);
                     $.chuansj = JSON.parse(data);
                     if ($.chuansj.code == 1) {
                         console.log(`前置处理：成功\n`);
@@ -664,7 +664,7 @@ function homejin(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 首页金币??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 首页金币🚩: ${decodeUnicode(data)}`);
                     $.homejin = JSON.parse(data);
                     if ($.homejin.code == 1) {
                         console.log(`首页金币：成功领取${$.homejin.jinbi}金币\n`);
@@ -704,7 +704,7 @@ function jindan_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 金蛋前置??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 金蛋前置🚩: ${decodeUnicode(data)}`);
                     $.jindan_click = JSON.parse(data);
                     if ($.jindan_click.code == 1) {
                         taskid = $.jindan_click.taskid
@@ -735,7 +735,7 @@ function jindan_done(timeout = 0) {
                 }
                 $.post(url, async (err, resp, data) => {
                     try {
-                        if (logs) $.log(`${O}, 首页金蛋??: ${decodeUnicode(data)}`);
+                        if (logs) $.log(`${O}, 首页金蛋🚩: ${decodeUnicode(data)}`);
                         $.jindan_done = JSON.parse(data);
                         if ($.jindan_done.code == 1) {
                             console.log(`首页金蛋：${$.jindan_done.jinbi}金币,领取成功\n`);
@@ -765,7 +765,7 @@ function help_index(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 助力活动??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 助力活动🚩: ${decodeUnicode(data)}`);
                     $.help_index = JSON.parse(data);
                     if ($.help_index.code == 1) {
                         console.log(`助力活动：现金${$.help_index.jinbi}元,差${$.help_index.diff_jinbi}元,时间剩余${($.help_index.time/3600).toFixed(0)}小时\n`);
@@ -798,7 +798,7 @@ function help_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 视频助力??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 视频助力🚩: ${decodeUnicode(data)}`);
                     $.help_click = JSON.parse(data);
                     if ($.help_click.code == 1) {
                         console.log(`视频助力：${$.help_click.jinbi/10000}元,领取成功\n`);
@@ -827,7 +827,7 @@ function signget(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 每日签到??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 每日签到🚩: ${decodeUnicode(data)}`);
                     $.signget = JSON.parse(data);
                     if ($.signget.code == 1) {
                         console.log(`每日签到：${$.signget.msg}\n`);
@@ -856,7 +856,7 @@ function sign_html(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 签到列表??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 签到列表🚩: ${decodeUnicode(data)}`);
                     $.sign_html = JSON.parse(data);
                     if ($.sign_html.jinbi_html) {
                         console.log(`签到列表：已签到${$.sign_html.sign_day}天\n`);
@@ -888,7 +888,7 @@ function dk_info(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 早晚打卡页??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 早晚打卡页🚩: ${decodeUnicode(data)}`);
                     $.dk_info = JSON.parse(data);
                     if ($.dk_info.code == 1) {
                         now_time = $.dk_info.now_time
@@ -922,7 +922,7 @@ function dk_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 早晚打卡??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 早晚打卡🚩: ${decodeUnicode(data)}`);
                     $.dk_click = JSON.parse(data);
                     if ($.dk_click.code == 1) {
                         console.log(`早晚打卡：获得${$.dk_click.jinbi}金币\n`);
@@ -947,7 +947,7 @@ function cy_info(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 答题活动页??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 答题活动页🚩: ${decodeUnicode(data)}`);
                     $.cy_info = JSON.parse(data);
                     if ($.cy_info.code == 1) {
                         console.log(`答题活动页：剩余${$.cy_info.day_num}次\n`);
@@ -979,7 +979,7 @@ function cy_sp(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 答题前置??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 答题前置🚩: ${decodeUnicode(data)}`);
                     $.cy_sp = JSON.parse(data);
                     if ($.cy_sp.code == 1) {
                         console.log(`答题前置：${$.cy_sp.msg}\n`);
@@ -1006,7 +1006,7 @@ function cy_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 答题活动??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 答题活动🚩: ${decodeUnicode(data)}`);
                     $.cy_click = JSON.parse(data);
                     if ($.cy_click.code == 1) {
                         console.log(`答题成功：获得${$.cy_click.jinbi}金币\n`);
@@ -1035,7 +1035,7 @@ function water_info(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 每天喝水??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 每天喝水🚩: ${decodeUnicode(data)}`);
                     $.water_info = JSON.parse(data);
                     if ($.water_info.code == 1) {
                         day_num = $.water_info.day_num
@@ -1067,7 +1067,7 @@ function water_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 开始喝水??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 开始喝水🚩: ${decodeUnicode(data)}`);
                     $.water_click = JSON.parse(data);
                     if ($.water_click.code == 1) {
                         console.log(`${$.water_click.msg}：获得${$.water_click.jinbi}金币\n`);
@@ -1082,7 +1082,7 @@ function water_click(timeout = 0) {
         }, timeout)
     })
 }
-/觉状态
+//睡觉状态
 function sleep_info(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -1092,7 +1092,7 @@ function sleep_info(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 睡觉状态??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 睡觉状态🚩: ${decodeUnicode(data)}`);
                     $.sleep_info = JSON.parse(data);
                     if ($.sleep_info.is_sleep == 1) {
                         console.log(`睡觉状态：做梦中\n`);
@@ -1127,7 +1127,7 @@ function sleep_start(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 开始睡觉??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 开始睡觉🚩: ${decodeUnicode(data)}`);
                     $.sleep_start = JSON.parse(data);
                     if ($.sleep_start.code == 1) {
                         console.log(`开始睡觉：开始睡觉\n`);
@@ -1152,14 +1152,14 @@ function sleep_end(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 结束睡觉??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 结束睡觉🚩: ${decodeUnicode(data)}`);
                     $.sleep_end = JSON.parse(data);
                     if ($.sleep_end.code == 1) {
                         console.log(`结束睡觉：结束睡觉，产生${$.sleep_end.jinbi}金币\n`);
                         $.message += `【结束睡觉】：结束睡觉，产生${$.sleep_end.jinbi}金币\n`;
                         taskid = $.sleep_end.taskid
                         nonce_str = $.sleep_end.nonce_str
-                        await sleep_done() /觉奖励
+                        await sleep_done() //睡觉奖励
                     }
                 } catch (e) {
                     $.logErr(e, resp);
@@ -1170,7 +1170,7 @@ function sleep_end(timeout = 0) {
         }, timeout)
     })
 }
-/觉奖励
+//睡觉奖励
 function sleep_done(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -1181,7 +1181,7 @@ function sleep_done(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 睡觉奖励??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 睡觉奖励🚩: ${decodeUnicode(data)}`);
                     $.sleep_done = JSON.parse(data);
                     if ($.sleep_done.code == 1) {
                         console.log(`睡觉奖励：睡觉奖励领取${$.sleep_done.jinbi}金币\n`);
@@ -1216,10 +1216,10 @@ function gualist(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 刮刮卡列表??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 刮刮卡列表🚩: ${decodeUnicode(data)}`);
                     $.gualist = JSON.parse(data);
                     if ($.gualist.ka && $.gualist.ka >= 1) {
-                        idlist = $.gualist.list.find(item => item.is_ad === &apos;0&apos;);
+                        idlist = $.gualist.list.find(item => item.is_ad === '0');
                         id = idlist.id
                         console.log(`刮刮卡列表：剩余${$.gualist.ka}张，下一张${idlist.jine}元\n`);
                         $.message += `【刮刮卡列表】：剩余${$.gualist.ka}张，下一张${idlist.jine}元\n`;
@@ -1249,7 +1249,7 @@ function guadet(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 刮刮卡??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 刮刮卡🚩: ${decodeUnicode(data)}`);
                     $.guadet = JSON.parse(data);
                     if ($.guadet.jine) {
                         guacs = data.match(/x(\d+).png/g).length + 1
@@ -1311,7 +1311,7 @@ function guapost(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 刮刮卡奖励??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 刮刮卡奖励🚩: ${decodeUnicode(data)}`);
                     $.guapost = JSON.parse(data);
                     if ($.guapost.jf) {
                         console.log(`刮刮卡奖励：获得${$.guapost.jf}金币\n`);
@@ -1340,7 +1340,7 @@ function lucky(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 转盘列表??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 转盘列表🚩: ${decodeUnicode(data)}`);
                     $.lucky = JSON.parse(data);
                     if ($.lucky.lucky_num) {
                         console.log(`转盘列表：剩余${$.lucky.lucky_num}次，已运行${$.lucky.lucky_count}次\n`);
@@ -1349,8 +1349,8 @@ function lucky(timeout = 0) {
                             await lucky_click() //转盘抽奖
                         }
                     }
-                    if ($.lucky && $.lucky.lucky_box.indexOf(&apos;1&apos;) >= 0) {
-                        box = $.lucky.lucky_box.indexOf(&apos;1&apos;) + 1
+                    if ($.lucky && $.lucky.lucky_box.indexOf('1') >= 0) {
+                        box = $.lucky.lucky_box.indexOf('1') + 1
                         await lucky_box() //抽奖宝箱
                     }
                 } catch (e) {
@@ -1372,7 +1372,7 @@ function lucky_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 转盘抽奖??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 转盘抽奖🚩: ${decodeUnicode(data)}`);
                     $.lucky_click = JSON.parse(data);
                     if ($.lucky_click.jinbi) {
                         console.log(`转盘抽奖：获得${$.lucky_click.jinbi}金币\n`);
@@ -1402,7 +1402,7 @@ function lucky_box(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 抽奖宝箱??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 抽奖宝箱🚩: ${decodeUnicode(data)}`);
                     $.lucky_box = JSON.parse(data);
                     if ($.lucky_box.jinbi) {
                         console.log(`抽奖宝箱：获得${$.lucky_box.jinbi}金币\n`);
@@ -1432,7 +1432,7 @@ function h5_list(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 看看赚列表??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 看看赚列表🚩: ${decodeUnicode(data)}`);
                     $.h5_list = JSON.parse(data);
                     is_ok = $.h5_list.find(item => item.is_ok === 0);
                     if (is_ok) {
@@ -1465,7 +1465,7 @@ function h5_news(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 看看赚执行??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 看看赚执行🚩: ${decodeUnicode(data)}`);
                     $.h5_news = JSON.parse(data);
                     if ($.h5_news.taskid) {
                         console.log(`看看赚执行：下个任务：${$.h5_news.mini_str}\n`);
@@ -1492,13 +1492,13 @@ function h5_h5(timeout = 0) {
             let url = {
                 url: `https://hunter-report.dui88.com/tuiaExtLog?group=1&type=9&json=%7B%22subtype%22%3A%22head%22%2C%22tck_rid_6c8%22%3A%220a56e7aaklm541ew-6681973%22%2C%22slotId%22%3A%22353024%22%2C%22activityId%22%3A%2216765%22%2C%22consumerId%22%3A%2226444115908%22%2C%22timestamp%22%3A${tts()}%7D`,
                 headers: {
-                    &quot;Host&quot;: &quot;hunter-report.dui88.com&quot;
+                    "Host": "hunter-report.dui88.com"
                 },
 
             }
             $.get(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 看看赚上传??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 看看赚上传🚩: ${decodeUnicode(data)}`);
                     $.h5_h5 = JSON.parse(data);
                     console.log(`看看赚：${$.h5_h5.msg}\n`);
                     $.message += `【看看赚】：${$.h5_h5.msg}\n`;
@@ -1528,7 +1528,7 @@ function h5_newsdone(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 看看赚完成??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 看看赚完成🚩: ${decodeUnicode(data)}`);
                     $.h5_newsdone = JSON.parse(data);
                     if ($.h5_newsdone.msg) {
                         console.log(`看看赚完成：${$.h5_newsdone.msg}${$.h5_newsdone.jinbi}金币\n`);
@@ -1557,7 +1557,7 @@ function renwu(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 赚赚任务??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 赚赚任务🚩: ${decodeUnicode(data)}`);
                     $.renwu = JSON.parse(data);
                     if ($.renwu.v_st == 0) {
                         await sp() //看视频
@@ -1593,7 +1593,7 @@ function news(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 看文章??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 看文章🚩: ${decodeUnicode(data)}`);
                     $.news = JSON.parse(data);
                     if ($.news.code == 1 && $.news.is_max == 0) {
                         nonce_str = $.news.nonce_str
@@ -1623,7 +1623,7 @@ function donenews(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 看文章完成??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 看文章完成🚩: ${decodeUnicode(data)}`);
                     $.donenews = JSON.parse(data);
                     if ($.donenews.jinbi) {
                         console.log(`看文章：获得${$.donenews.jinbi}金币，今日获得${$.donenews.day_jinbi}金币\n`);
@@ -1659,7 +1659,7 @@ function admobile_show(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 激活广告??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 激活广告🚩: ${decodeUnicode(data)}`);
                     $.admobile_show = JSON.parse(data);
                     if ($.admobile_show.code == 1) {
                         ad_id = $.admobile_show.ad_id
@@ -1685,7 +1685,7 @@ function admobile_click(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 点击广告??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 点击广告🚩: ${decodeUnicode(data)}`);
                     $.admobile_click = JSON.parse(data);
                     if ($.admobile_click.code == 1) {
                         nonce_str = $.admobile_click.nonce_str
@@ -1711,7 +1711,7 @@ function admobile_done(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 广告奖励??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 广告奖励🚩: ${decodeUnicode(data)}`);
                     $.admobile_done = JSON.parse(data);
                     if ($.admobile_done.code == 1) {
                         console.log(`广告奖励：获得${$.admobile_done.jinbi}金币\n`);
@@ -1736,13 +1736,13 @@ function tixian_html(timeout = 0) {
             }
             $.get(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 提现页??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 提现页🚩: ${decodeUnicode(data)}`);
                     $.tixian_html = JSON.parse(data);
                     if ($.tixian_html.tixian_html) {
 
-                        jine3 = $.tixian_html.tixian_html.find(item => item.jine === &apos;50&apos;);
-                        jine4 = $.tixian_html.tixian_html.find(item => item.jine === &apos;100&apos;);
-                        jine5 = $.tixian_html.tixian_html.find(item => item.jine === &apos;200&apos;);
+                        jine3 = $.tixian_html.tixian_html.find(item => item.jine === '50');
+                        jine4 = $.tixian_html.tixian_html.find(item => item.jine === '100');
+                        jine5 = $.tixian_html.tixian_html.find(item => item.jine === '200');
                         day_tixian_tip = $.tixian_html.tixian_html.find(item => item.day_tixian_tip);
 
                         if (day_tixian_tip) {
@@ -1752,16 +1752,16 @@ function tixian_html(timeout = 0) {
 
                         if (jine3 && jine3.fenshu_tixian_tip && jine4 && jine4.fenshu_tixian_tip && jine5 && jine5.fenshu_tixian_tip) {
 
-                            fenshu3 = jine3.fenshu_tixian_tip.split(&apos;今日剩余&apos;)[1].split(&apos;份&apos;)[0]
-                            fenshu4 = jine4.fenshu_tixian_tip.split(&apos;今日剩余&apos;)[1].split(&apos;份&apos;)[0]
-                            fenshu5 = jine5.fenshu_tixian_tip.split(&apos;今日剩余&apos;)[1].split(&apos;份&apos;)[0]
+                            fenshu3 = jine3.fenshu_tixian_tip.split('今日剩余')[1].split('份')[0]
+                            fenshu4 = jine4.fenshu_tixian_tip.split('今日剩余')[1].split('份')[0]
+                            fenshu5 = jine5.fenshu_tixian_tip.split('今日剩余')[1].split('份')[0]
 
 
 
                             console.log(`${jine3.jine}元：${jine3.fenshu_tixian_tip}\n${jine4.jine}元：${jine4.fenshu_tixian_tip}\n${jine5.jine}元：${jine5.fenshu_tixian_tip}\n`);
                             $.message += `【${jine3.jine}元】：${jine3.fenshu_tixian_tip}\n【${jine4.jine}元】：${jine4.fenshu_tixian_tip}\n【${jine5.jine}元】：${jine5.fenshu_tixian_tip}\n`;
                         }
-                        if (!day_tixian_tip && ($.user.wx_username != &quot;&quot; || $.user.is_weixin == 1)) {
+                        if (!day_tixian_tip && ($.user.wx_username != "" || $.user.is_weixin == 1)) {
 
                             if (CASH == 0.3 && $.user.day_jinbi >= 5000 && $.user.money >= CASH) {
                                 await tixian() //提现
@@ -1805,7 +1805,7 @@ function tixian(timeout = 0) {
             }
             $.post(url, async (err, resp, data) => {
                 try {
-                    if (logs) $.log(`${O}, 现金提现??: ${decodeUnicode(data)}`);
+                    if (logs) $.log(`${O}, 现金提现🚩: ${decodeUnicode(data)}`);
                     $.tixian = JSON.parse(data);
                     if ($.tixian.code == 1) {
                         console.log(`现金提现：${$.tixian.msg}\n`);
@@ -1831,12 +1831,12 @@ function Env(t, e) {
         constructor(t) {
             this.env = t
         }
-        send(t, e = &quot;GET&quot;) {
-            t = &quot;string&quot; == typeof t ? {
+        send(t, e = "GET") {
+            t = "string" == typeof t ? {
                 url: t
             } : t;
             let s = this.get;
-            return &quot;POST&quot; === e && (s = this.post), new Promise((e, i) => {
+            return "POST" === e && (s = this.post), new Promise((e, i) => {
                 s.call(this, t, (t, s, r) => {
                     t ? i(t) : e(s)
                 })
@@ -1846,24 +1846,24 @@ function Env(t, e) {
             return this.send.call(this.env, t)
         }
         post(t) {
-            return this.send.call(this.env, t, &quot;POST&quot;)
+            return this.send.call(this.env, t, "POST")
         }
     }
     return new class {
         constructor(t, e) {
-            this.name = t, this.http = new s(this), this.data = null, this.dataFile = &quot;box.dat&quot;, this.logs = [], this.isMute = !1, this.isNeedRewrite = !1, this.logSeparator = &quot;\n&quot;, this.startTime = (new Date).getTime(), Object.assign(this, e), this.log(``, `\ud83d\udd14${this.name}, \u5f00\u59cb!`)
+            this.name = t, this.http = new s(this), this.data = null, this.dataFile = "box.dat", this.logs = [], this.isMute = !1, this.isNeedRewrite = !1, this.logSeparator = "\n", this.startTime = (new Date).getTime(), Object.assign(this, e), this.log(``, `\ud83d\udd14${this.name}, \u5f00\u59cb!`)
         }
         isNode() {
-            return &quot;undefined&quot; != typeof module && !!module.exports
+            return "undefined" != typeof module && !!module.exports
         }
         isQuanX() {
-            return &quot;undefined&quot; != typeof $task
+            return "undefined" != typeof $task
         }
         isSurge() {
-            return &quot;undefined&quot; != typeof $httpClient && &quot;undefined&quot; == typeof $loon
+            return "undefined" != typeof $httpClient && "undefined" == typeof $loon
         }
         isLoon() {
-            return &quot;undefined&quot; != typeof $loon
+            return "undefined" != typeof $loon
         }
         toObj(t, e = null) {
             try {
@@ -1903,20 +1903,20 @@ function Env(t, e) {
         }
         runScript(t, e) {
             return new Promise(s => {
-                let i = this.getdata(&quot;@chavy_boxjs_userCfgs.httpapi&quot;);
+                let i = this.getdata("@chavy_boxjs_userCfgs.httpapi");
                 i = i ? i.replace(/\n/g, ``).trim() : i;
-                let r = this.getdata(&quot;@chavy_boxjs_userCfgs.httpapi_timeout&quot;);
+                let r = this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");
                 r = r ? 1 * r : 20, r = e && e.timeout ? e.timeout : r;
-                const [o, h] = i.split(&quot;@&quot;), a = {
+                const [o, h] = i.split("@"), a = {
                     url: `http://${h}/v1/scripting/evaluate`,
                     body: {
                         script_text: t,
-                        mock_type: &quot;cron&quot;,
+                        mock_type: "cron",
                         timeout: r
                     },
                     headers: {
-                        &quot;X-Key&quot;: o,
-                        Accept: &quot;*/*&quot;
+                        "X-Key": o,
+                        Accept: "*/*"
                     }
                 };
                 this.post(a, (t, e, i) => s(i))
@@ -1924,7 +1924,7 @@ function Env(t, e) {
         }
         loaddata() {
             if (!this.isNode()) return {}; {
-                this.fs = this.fs ? this.fs : require(&quot;fs&quot;), this.path = this.path ? this.path : require(&quot;path&quot;);
+                this.fs = this.fs ? this.fs : require("fs"), this.path = this.path ? this.path : require("path");
                 const t = this.path.resolve(this.dataFile),
                     e = this.path.resolve(process.cwd(), this.dataFile),
                     s = this.fs.existsSync(t),
@@ -1941,7 +1941,7 @@ function Env(t, e) {
         }
         writedata() {
             if (this.isNode()) {
-                this.fs = this.fs ? this.fs : require(&quot;fs&quot;), this.path = this.path ? this.path : require(&quot;path&quot;);
+                this.fs = this.fs ? this.fs : require("fs"), this.path = this.path ? this.path : require("path");
                 const t = this.path.resolve(this.dataFile),
                     e = this.path.resolve(process.cwd(), this.dataFile),
                     s = this.fs.existsSync(t),
@@ -1951,7 +1951,7 @@ function Env(t, e) {
             }
         }
         lodash_get(t, e, s) {
-            const i = e.replace(/\[(\d+)\]/g, &quot;.$1&quot;).split(&quot;.&quot;);
+            const i = e.replace(/\[(\d+)\]/g, ".$1").split(".");
             let r = t;
             for (const t of i)
                 if (r = Object(r)[t], void 0 === r) return s;
@@ -1976,7 +1976,7 @@ function Env(t, e) {
         setdata(t, e) {
             let s = !1;
             if (/^@/.test(e)) {
-                const [, i, r] = /^@(.*?)\.(.*?)$/.exec(e), o = this.getval(i), h = i ? &quot;null&quot; === o ? null : o || &quot;{}&quot; : &quot;{}&quot;;
+                const [, i, r] = /^@(.*?)\.(.*?)$/.exec(e), o = this.getval(i), h = i ? "null" === o ? null : o || "{}" : "{}";
                 try {
                     const e = JSON.parse(h);
                     this.lodash_set(e, r, t), s = this.setval(JSON.stringify(e), i)
@@ -1994,11 +1994,11 @@ function Env(t, e) {
             return this.isSurge() || this.isLoon() ? $persistentStore.write(t, e) : this.isQuanX() ? $prefs.setValueForKey(t, e) : this.isNode() ? (this.data = this.loaddata(), this.data[e] = t, this.writedata(), !0) : this.data && this.data[e] || null
         }
         initGotEnv(t) {
-            this.got = this.got ? this.got : require(&quot;got&quot;), this.cktough = this.cktough ? this.cktough : require(&quot;tough-cookie&quot;), this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar, t && (t.headers = t.headers ? t.headers : {}, void 0 === t.headers.Cookie && void 0 === t.cookieJar && (t.cookieJar = this.ckjar))
+            this.got = this.got ? this.got : require("got"), this.cktough = this.cktough ? this.cktough : require("tough-cookie"), this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar, t && (t.headers = t.headers ? t.headers : {}, void 0 === t.headers.Cookie && void 0 === t.cookieJar && (t.cookieJar = this.ckjar))
         }
         get(t, e = (() => {})) {
-            t.headers && (delete t.headers[&quot;Content-Type&quot;], delete t.headers[&quot;Content-Length&quot;]), this.isSurge() || this.isLoon() ? (this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
-                &quot;X-Surge-Skip-Scripting&quot;: !1
+            t.headers && (delete t.headers["Content-Type"], delete t.headers["Content-Length"]), this.isSurge() || this.isLoon() ? (this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
+                "X-Surge-Skip-Scripting": !1
             })), $httpClient.get(t, (t, s, i) => {
                 !t && s && (s.body = i, s.statusCode = s.status), e(t, s, i)
             })) : this.isQuanX() ? (this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
@@ -2016,10 +2016,10 @@ function Env(t, e) {
                     headers: r,
                     body: o
                 }, o)
-            }, t => e(t))) : this.isNode() && (this.initGotEnv(t), this.got(t).on(&quot;redirect&quot;, (t, e) => {
+            }, t => e(t))) : this.isNode() && (this.initGotEnv(t), this.got(t).on("redirect", (t, e) => {
                 try {
-                    if (t.headers[&quot;set-cookie&quot;]) {
-                        const s = t.headers[&quot;set-cookie&quot;].map(this.cktough.Cookie.parse).toString();
+                    if (t.headers["set-cookie"]) {
+                        const s = t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();
                         this.ckjar.setCookieSync(s, null), e.cookieJar = this.ckjar
                     }
                 } catch (t) {
@@ -2047,12 +2047,12 @@ function Env(t, e) {
             }))
         }
         post(t, e = (() => {})) {
-            if (t.body && t.headers && !t.headers[&quot;Content-Type&quot;] && (t.headers[&quot;Content-Type&quot;] = &quot;application/x-www-form-urlencoded&quot;), t.headers && delete t.headers[&quot;Content-Length&quot;], this.isSurge() || this.isLoon()) this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
-                &quot;X-Surge-Skip-Scripting&quot;: !1
+            if (t.body && t.headers && !t.headers["Content-Type"] && (t.headers["Content-Type"] = "application/x-www-form-urlencoded"), t.headers && delete t.headers["Content-Length"], this.isSurge() || this.isLoon()) this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
+                "X-Surge-Skip-Scripting": !1
             })), $httpClient.post(t, (t, s, i) => {
                 !t && s && (s.body = i, s.statusCode = s.status), e(t, s, i)
             });
-            else if (this.isQuanX()) t.method = &quot;POST&quot;, this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
+            else if (this.isQuanX()) t.method = "POST", this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
                 hints: !1
             })), $task.fetch(t).then(t => {
                 const {
@@ -2098,45 +2098,45 @@ function Env(t, e) {
         }
         time(t) {
             let e = {
-                &quot;M+&quot;: (new Date).getMonth() + 1,
-                &quot;d+&quot;: (new Date).getDate(),
-                &quot;H+&quot;: (new Date).getHours(),
-                &quot;m+&quot;: (new Date).getMinutes(),
-                &quot;s+&quot;: (new Date).getSeconds(),
-                &quot;q+&quot;: Math.floor(((new Date).getMonth() + 3) / 3),
+                "M+": (new Date).getMonth() + 1,
+                "d+": (new Date).getDate(),
+                "H+": (new Date).getHours(),
+                "m+": (new Date).getMinutes(),
+                "s+": (new Date).getSeconds(),
+                "q+": Math.floor(((new Date).getMonth() + 3) / 3),
                 S: (new Date).getMilliseconds()
             };
             /(y+)/.test(t) && (t = t.replace(RegExp.$1, ((new Date).getFullYear() + ``).substr(4 - RegExp.$1.length)));
-            for (let s in e) new RegExp(&quot;(&quot; + s + &quot;)&quot;).test(t) && (t = t.replace(RegExp.$1, 1 == RegExp.$1.length ? e[s] : (&quot;00&quot; + e[s]).substr((`` + e[s]).length)));
+            for (let s in e) new RegExp("(" + s + ")").test(t) && (t = t.replace(RegExp.$1, 1 == RegExp.$1.length ? e[s] : ("00" + e[s]).substr((`` + e[s]).length)));
             return t
         }
         msg(e = t, s = ``, i = ``, r) {
             const o = t => {
                 if (!t) return t;
-                if (&quot;string&quot; == typeof t) return this.isLoon() ? t : this.isQuanX() ? {
-                    &quot;open-url&quot;: t
+                if ("string" == typeof t) return this.isLoon() ? t : this.isQuanX() ? {
+                    "open-url": t
                 } : this.isSurge() ? {
                     url: t
                 } : void 0;
-                if (&quot;object&quot; == typeof t) {
+                if ("object" == typeof t) {
                     if (this.isLoon()) {
-                        let e = t.openUrl || t.url || t[&quot;open-url&quot;],
-                            s = t.mediaUrl || t[&quot;media-url&quot;];
+                        let e = t.openUrl || t.url || t["open-url"],
+                            s = t.mediaUrl || t["media-url"];
                         return {
                             openUrl: e,
                             mediaUrl: s
                         }
                     }
                     if (this.isQuanX()) {
-                        let e = t[&quot;open-url&quot;] || t.url || t.openUrl,
-                            s = t[&quot;media-url&quot;] || t.mediaUrl;
+                        let e = t["open-url"] || t.url || t.openUrl,
+                            s = t["media-url"] || t.mediaUrl;
                         return {
-                            &quot;open-url&quot;: e,
-                            &quot;media-url&quot;: s
+                            "open-url": e,
+                            "media-url": s
                         }
                     }
                     if (this.isSurge()) {
-                        let e = t.url || t.openUrl || t[&quot;open-url&quot;];
+                        let e = t.url || t.openUrl || t["open-url"];
                         return {
                             url: e
                         }
@@ -2144,8 +2144,8 @@ function Env(t, e) {
                 }
             };
             this.isMute || (this.isSurge() || this.isLoon() ? $notification.post(e, s, i, o(r)) : this.isQuanX() && $notify(e, s, i, o(r)));
-            let h = [``, &quot;==============\ud83d\udce3\u7cfb\u7edf\u901a\u77e5\ud83d\udce3==============&quot;];
-            h.push(e), s && h.push(s), i && h.push(i), console.log(h.join(&quot;\n&quot;)), this.logs = this.logs.concat(h)
+            let h = [``, "==============\ud83d\udce3\u7cfb\u7edf\u901a\u77e5\ud83d\udce3=============="];
+            h.push(e), s && h.push(s), i && h.push(i), console.log(h.join("\n")), this.logs = this.logs.concat(h)
         }
         log(...t) {
             t.length > 0 && (this.logs = [...this.logs, ...t]), console.log(t.join(this.logSeparator))
