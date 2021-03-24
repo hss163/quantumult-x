@@ -1,62 +1,67 @@
-/ *子野 
-github地址https://github.com/6Svip120apk69
-TG頻道地址https://t.me/ziyescript
-TG交流群https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs鏈接https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json
-轉載請備註個名字，謝謝
+/* ziye 
+github地址 https://github.com/6Svip120apk69
+TG频道地址  https://t.me/ziyescript
+TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
+boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json
+转载请备注个名字，谢谢
 
-⚠️笑譜
-腳本運行一次   
-則運行6次視頻1次金蛋1次直播（實時關閉，且在8點到23點有效）
+⚠️笑谱
+脚本运行一次   
+则运行6次视频 1次金蛋 1次直播（直播默认关闭，且在8点到23点有效）
 
-1.15調整金蛋延遲為60秒
-1.17增加ck重新提醒，以及金幣滿額停止
-1.27笑譜恢復，活動id284
-1.27-2增加觀看直播功能，或關閉關閉，設置LIVE來開啟如設置LIVE為60則開啟直播，並且次數達到60次停止
-1.27-3調整直播運行次數，運行一次腳本，執行6次直播
-1.27-4調整策略，6次視頻1次金蛋1次直播
-1.28修復收益列表問題
-1.29活動id302
-1.30修復活動id不斷變化問題，修復金蛋視頻id
-1.30解決ck失效問題
-1.30-3增加提現
-1.31增加180秒任務，優先直播，修改直播金幣顯示
-1.31-2調整決策
-2.1增加CK獲取時間
-2.2優化
-2.3修復直播問題，採用真實直播id
-2.3設置LIVE為61時單跑直播
-2.3修復錯誤，修復直播收益顯示
-2.4修復金蛋問題，增加視頻收益統計，增加上限確定，達到上限以及19點後不執行視頻，
-2.4直播限制為30設置LIVE為0不跑直播，1跑直播和視頻，2單跑直播
-2.5增加首次視頻驗證，灰號直接停止視頻
-2.6修復判定錯誤，增加浪湧獲取令牌重新
-2.7增加紅包雨，設置LIVE等於3開啟
-2.7-2調整紅包雨運行機制
-2.8修復無人直播出現的錯誤
-2.8-2修復紅包雨結束報錯
-2.8-3增加通過驗證碼獲取令牌功能，並內置標題，新人設置LIVE為888
-2.8-4修復錯誤
-2.10修復紅包雨問題，LIVE設置3啟動紅包雨活動，修復版本問題
-2.10-2可拆卸紅包雨模塊
-2.11可移除視頻時間限制，LIVE設置666做新人180秒任務
-2.26適應直播上限20次
-3.5設置888由上至下循環提現
-3.8替換為循環獲取ck
-3.9因視頻功能無效，故取消視頻，交替開啟直播
-3.17修復視頻功能，暫時設置ck上限為10
-3.18修復視頻錯誤，修復小錯誤
-⚠️一共1個位置3個ck👉7條秘密 
-多賬號換行
+1.15 调整金蛋延迟为60秒
+1.17 增加ck失效提醒，以及金币满额停止
+1.27 笑谱恢复，活动id284
+1.27-2 增加看直播功能，默认关闭，设置LIVE来开启  如 设置LIVE 为 60 则开启直播，并且次数达到60次停止
+1.27-3 调整直播运行次数，运行一次脚本，执行6次直播
+1.27-4 调整策略，6次视频1次金蛋1次直播
+1.28 修复收益列表问题
+1.29 活动id302
+1.30 修复活动id频繁变动问题，修复金蛋视频id
+1.30 解决ck失效问题
+1.30-3 增加提现
+1.31 增加180秒任务,优先直播，修改直播金币显示
+1.31-2 调整判定
+2.1 增加CK获取时间
+2.2 优化
+2.3 修复直播问题，采用真实直播id
+2.3 设置LIVE 为61 时  单跑直播
+2.3 修复错误，修复直播收益显示
+2.4 修复金蛋问题，增加视频收益统计，增加上限判定，达到上限以及19点后不执行视频，
+2.4 直播限制为30  设置LIVE为0 不跑直播，1跑直播和视频，2单跑直播
+2.5 增加首次视频验证，灰号直接停止视频
+2.6 修复判定错误,增加surge获取token重写
+2.7 增加红包雨，设置LIVE等于3 开启
+2.7-2 调整红包雨运行机制
+2.8 修复无人直播出现的错误
+2.8-2 修复红包雨结束报错
+2.8-3 增加通过验证码获取token功能，并且内置header，新人设置LIVE为888
+2.8-4 修复错误
+2.10 修复红包雨问题，LIVE设置3  启动红包雨活动，修复版本问题
+2.10-2 移除红包雨模块
+2.11 移除视频时间限制，LIVE设置666做新人180秒任务
+2.26 适配直播上限20次
+3.5 设置888由上至下循环提现
+3.8 替换为循环获取ck
+3.9 因视频功能无效，故取消视频，默认开启直播
+3.17 修复视频功能， 暂时设置ck上限为10
+3.18 修复视频错误，修复小错误，新增COOKIE方式一 boxjs复制会话
+3.19 修复ac运行报错
+3.20 视频ck有效期目前未知，增加失效判定，直播上限为5000，已适配
+
+
+
+⚠️一共1个位置 3个ck  👉 7条 Secrets 
+多账号换行
 
 
 ⚠️方法一
 
-首先進入進入譜選擇手機號登陸，輸入手機號，點擊獲取驗證碼
+第一步 进入笑谱 选择手机号登陆，输入手机号，点击获取验证码
 
-第二步⚠️進入boxjs（其他平台則輸入對應環境變量）輸入當前賬號序號輸入手機號和驗證碼
+第二步 ⚠️进入boxjs（其他平台则输入对应环境变量）  输入当前账号序号   输入手机号  和  验证码
 
-第三步運行js手機則自動獲取令牌（其他平台則復制令牌，填充環境變量）然後返回boxjs修改驗證碼為0
+第三步 运行js  手机则自动获取token（其他平台则复制token，填写环境变量）  然后回到boxjs 修改验证码为0
 
 
 已全部操作完成
@@ -64,225 +69,254 @@ boxjs鏈接https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1
 
 ⚠️方法二
 
-首先添加hostname = veishop.iboxpay.com，
+第一步 添加  hostname=veishop.iboxpay.com,
 
-第二步⚠️添加笑譜獲取更新TOKEN重組  
+第二步 ⚠️添加笑谱获取更新TOKEN重写  
 
-登錄笑譜（在登錄狀態就退出，重新登錄）獲取更新TOKEN
-
-
-
-refreshtokenVal👉XP_refreshTOKEN
-iboxpayvideoheaderVal👉XP_iboxpayvideoHEADER
-iboxpayvideobodyVal👉XP_iboxpayvideoBODY
-
-
-⚠️視頻ck
-添加視頻ck重寫圈滿獲取header和body，若遇到網絡問題，請切換到4G
+登录笑谱(在登录状态就退出，重新登录)  获取更新TOKEN
 
 
 
-設置任務可設置0 1 2 0開視頻關直播1開視頻開直播2關視頻開直播
- LIVE👉XP_live
+refreshtokenVal 👉XP_refreshTOKEN
+iboxpayvideoheaderVal👉 XP_iboxpayvideoHEADER
+iboxpayvideobodyVal👉 XP_iboxpayvideoBODY
 
-設置提現金額可設置0 1 15 30 50 100 888默認0關閉設置888由上至下循環提現
-現金👉XP_CASH 
 
-設置手機號 
- 電話👉XP_phone
-
-設置驗證碼默認0關閉獲取令牌功能
-短信👉XP_sms
-
-主機️主機名以及重組👇
-
-（手機可以獲取refreshTOKEN其他開啟抓包，然後登錄笑譜，找到https://veishop.iboxpay.com/nf_gateway/nf-user-auth-web/ignore_tk/veishop/v1/裡的響應體refreshTOKEN）
-
-hostname = veishop.iboxpay.com
-
-###############圈x
-
-＃笑譜獲取更新TOKEN
-https：\ / \ / veishop \ .iboxpay \ .com \ / nf_gateway \ / nf-user-auth-web \ / ignore_tk \ / veishop \ / v1 \ / *網址腳本-響應正文https：//raw.githubusercontent .com / 6Svip120apk69 / gitee_q8qsTAUA_cThxc1RBVUE / main / Task / iboxpay.js
-
-＃笑譜獲取視頻ck
-https：\ / \ / veishop \ .iboxpay \ .com \ / nf_gateway \ / nf_customer_activity \ / day_cash \ / v1 \ /give_gold_coin_by_video.json url腳本請求正文https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThx main / Task / iboxpay.js
-
-############### loon
-http響應https：\ / \ / veishop \ .iboxpay \ .com \ / nf_gateway \ / nf-user-auth-web \ / ignore_tk \ / veishop \ / v1 \ / * script-path = https：// raw。 githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js，require-body = 1，max-size = 0，tag =笑普令牌
-
-http-需要https：\ / \ / veishop \ .iboxpay \ .com \ / nf_gateway \ / nf_customer_activity \ / day_cash \ / v1 \ /give_gold_coin_by_video.json腳本路徑= https：//raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_ /main/Task/iboxpay.js，require-body = 1，max-size = 0，tag =笑譜獲取視頻ck
-＃＃＃＃＃＃＃＃＃＃＃＃＃＃ 湧
-
-＃笑譜獲取更新TOKEN
-笑譜獲取更新令牌=類型= http響應，模式= https：\ / \ / veishop \ .iboxpay \ .com \ / nf_gateway \ / nf-user-auth-web \ / ignore_tk \ / veishop \ / v1 \ / *，requires-body = 1，max-size = 0，script-path = https：//raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js
-
-＃笑譜獲取視頻ck
-笑譜獲取視頻ck = type = http-requires，pattern = https：\ / \ / veishop \ .iboxpay \ .com \ / nf_gateway \ / nf_customer_activity \ / day_cash \ / v1 \ /give_gold_coin_by_video.json,requires-body=1 ，max-size = 0，script-path = https：//raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js
+⚠️视频ck
+添加视频ck重写  圈满获取header和body，若遇到网络问题，请切换到4G
 
 
 
-* /
-GXRZ ='3.18修復視頻錯誤，修復小錯誤'
-const $ = Env（“笑譜”）;
-$ .idx =（$ .idx =（$ .getval（'iboxpaySuffix'）||'1'）-1）> 0嗎？（$ .idx +1 +''）：''; //賬號擴展字符
-const notify = $ .isNode（）嗎？require（“ ./ sendNotify”）：``;
-const COOKIE = $ .isNode（）嗎？require（“ ../ iboxpayCOOKIE”）：``;
-const日誌= 0; // 0為關閉日誌，1為開啟
-const notifyttt = 1 // 0為關閉外部推進，1為12 23點外部推進
-const notifyInterval = 2; // 0為關閉通知，1為所有通知，2為12 23點通知，3為6 12 18 23點通知
+设置任务 可设置 0 1 2    0开视频关直播 1开视频开直播 2关视频开直播
+ LIVE  👉  XP_live
+
+设置提现金额 可设置 0 1 15 30 50 100 888 默认0关闭  设置888由上至下循环提现
+CASH  👉  XP_CASH 
+
+设置手机号 
+ phone  👉  XP_phone
+
+设置验证码   默认0关闭获取token功能
+sms  👉  XP_sms
+
+⚠️主机名以及重写👇
+
+（手机可以获取refreshTOKEN     其他开启抓包，然后登录笑谱，找到 https://veishop.iboxpay.com/nf_gateway/nf-user-auth-web/ignore_tk/veishop/v1/ 里的响应体 refreshTOKEN）
+
+hostname=veishop.iboxpay.com
+
+############## 圈x
+
+#笑谱获取更新TOKEN
+https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/* url script-response-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js
+
+#笑谱获取视频ck
+https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf_customer_activity\/day_cash\/v1\/give_gold_coin_by_video.json url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js
+
+############## loon
+http-response https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/* script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js, requires-body=1,max-size=0, tag=笑普token
+
+http-requires https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf_customer_activity\/day_cash\/v1\/give_gold_coin_by_video.json script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js, requires-body=1,max-size=0, tag=笑谱获取视频ck
+############## surge
+
+#笑谱获取更新TOKEN
+笑谱获取更新TOKEN = type=http-response,pattern=https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js
+
+#笑谱获取视频ck
+笑谱获取视频ck = type=http-requires,pattern=https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf_customer_activity\/day_cash\/v1\/give_gold_coin_by_video.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/iboxpay.js
+
+
+
+*/
+GXRZ = '3.20 视频ck有效期目前未知，增加失效判定，直播上限为5000，已适配'
+const $ = Env("笑谱");
+$.idx = ($.idx = ($.getval('iboxpaySuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
+const notify = $.isNode() ? require("./sendNotify") : ``;
+const COOKIE = $.isNode() ? require("./iboxpayCOOKIE") : ``;
+const logs = 0; // 0为关闭日志，1为开启
+const notifyttt = 1 // 0为关闭外部推送，1为12 23 点外部推送
+const notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 const CS = 5
-$ .message =''，COOKIES_SPLIT =''，CASH =''，LIVE =''，電話=''，sms =''，ddtime =''，spid =''，令牌='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'，zbid = ''，cashcs =''，newcashcs =''，liveId ='';
-讓livecs = 0，
-    videocs = 0，
-    生命= 0，
-    HBY = 0，
+$.message = '', COOKIES_SPLIT = '', CASH = '', Length = 0, LIVE = '', phone = '', sms = '', ddtime = '', spid = '', TOKEN = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', zbid = '', cashcs = '', newcashcs = '', liveId = '';
+let livecs = 0,
+    videoscs = 0,
+    LIVES = 0,
+    HBY = 0,
     liveIdcd = 0;
-RT = 30000；
-const refreshtokenArr = [];
-讓refreshtokenVal =``;
-讓middlerefreshTOKEN = [];
-const iboxpayvideoheaderArr = [];
-讓iboxpayvideoheaderVal =``;
-讓middleiboxpayvideoHEADER = [];
-const iboxpayvideobodyArr = [];
-讓iboxpayvideobodyVal =``;
-讓middleiboxpayvideoBODY = [];
-如果（$ .isNode（））{
-    //沒有設置XP_CASH則默認為0不提現
-    現金= process.env.XP_CASH || 0;
-    //沒有設置XP_live則默認0
-    LIVE = process.env.XP_live || 0;
-    //沒有設置XP_phone則默認為0 
-    電話= process.env.XP_phone || 0;
-    //沒有設置XP_sms則默認0不獲取TOKEN
+RT = 30000;
+let refreshtokenArr = [];
+let refreshtokenVal = ``;
+let middlerefreshTOKEN = [];
+let iboxpayvideoheaderArr = [];
+let iboxpayvideoheaderVal = ``;
+let middleiboxpayvideoHEADER = [];
+let iboxpayvideobodyArr = [];
+let iboxpayvideobodyVal = ``;
+let middleiboxpayvideoBODY = [];
+if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
+    console.log(
+        `============ cookie方式为：方式一 boxjs复制会话 =============\n`
+    );
+}
+if ($.isNode() && COOKIE.refreshtokenVal && COOKIE.refreshtokenVal != '') {
+    console.log(
+        `============ cookie方式为：方式三 直接填写 =============\n`
+    );
+}
+
+if ($.isNode()) {
+    // 没有设置 XP_CASH 则默认为 0 不提现
+    CASH = process.env.XP_CASH || 0;
+    // 没有设置 XP_live 则默认0
+    LIVE = process.env.XP_live || 1;
+    // 没有设置 XP_phone 则默认为 0 
+    phone = process.env.XP_phone || 0;
+    // 没有设置 XP_sms 则默认0  不获取TOKEN
     sms = process.env.XP_sms || 0
 
 }
-如果（$ .isNode（）&& process.env.XP_refreshTOKEN）{
-    COOKIES_SPLIT = process.env.COOKIES_SPLIT || “ \ n”;
-    console.log（
-        `============ Cookies分隔符為：$ {JSON.stringify（
+if ($.isNode() && process.env.XP_refreshTOKEN) {
+    COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
+    console.log(
+        `============ cookies分隔符为：${JSON.stringify(
       COOKIES_SPLIT
-    ）} ============= \ n`
-    ）;
-    如果 （
+    )} =============\n`
+    );
+    if (
         process.env.XP_refreshTOKEN &&
-        process.env.XP_refreshTOKEN.indexOf（COOKIES_SPLIT）> -1
-    ）{
-        middlerefreshTOKEN = process.env.XP_refreshTOKEN.split（COOKIES_SPLIT）;
-    } 別的 {
-        middlerefreshTOKEN = process.env.XP_refreshTOKEN.split（）;
+        process.env.XP_refreshTOKEN.indexOf(COOKIES_SPLIT) > -1
+    ) {
+        middlerefreshTOKEN = process.env.XP_refreshTOKEN.split(COOKIES_SPLIT);
+    } else {
+        middlerefreshTOKEN = process.env.XP_refreshTOKEN.split();
     }
-    如果 （
-        process.env.XP_iboxpayvideoHEADER &&
-        process.env.XP_iboxpayvideoHEADER.indexOf（COOKIES_SPLIT）> -1
-    ）{
-        middleiboxpayvideoHEADER = process.env.XP_iboxpayvideoHEADER.split（COOKIES_SPLIT）;
-    } 別的 {
-        middleiboxpayvideoHEADER = process.env.XP_iboxpayvideoHEADER.split（）;
-    }
-    如果 （
-        process.env.XP_iboxpayvideoBODY &&
-        process.env.XP_iboxpayvideoBODY.indexOf（COOKIES_SPLIT）> -1
-    ）{
-        middleiboxpayvideoBODY = process.env.XP_iboxpayvideoBODY.split（COOKIES_SPLIT）;
-    } 別的 {
-        middleiboxpayvideoBODY = process.env.XP_iboxpayvideoBODY.split（）;
+    if (process.env.XP_iboxpayvideoHEADER) {
+        if (
+            process.env.XP_iboxpayvideoHEADER &&
+            process.env.XP_iboxpayvideoHEADER.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleiboxpayvideoHEADER = process.env.XP_iboxpayvideoHEADER.split(COOKIES_SPLIT);
+        } else {
+            middleiboxpayvideoHEADER = process.env.XP_iboxpayvideoHEADER.split();
+        }
+        if (
+            process.env.XP_iboxpayvideoBODY &&
+            process.env.XP_iboxpayvideoBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleiboxpayvideoBODY = process.env.XP_iboxpayvideoBODY.split(COOKIES_SPLIT);
+        } else {
+            middleiboxpayvideoBODY = process.env.XP_iboxpayvideoBODY.split();
+        }
     }
 }
-如果（COOKIE.refreshtokenVal）{
+if (COOKIE.refreshtokenVal) {
     XP_COOKIES = {
 
-        “ refreshtokenVal”：COOKIE.refreshtokenVal.split（'\ n'），
-        “ iboxpayvideoheaderVal”：COOKIE.iboxpayvideoheaderVal.split（'\ n'），
-        “ iboxpayvideobodyVal”：COOKIE.iboxpayvideobodyVal.split（'\ n'），
+        "refreshtokenVal": COOKIE.refreshtokenVal.split('\n'),
+        "iboxpayvideoheaderVal": COOKIE.iboxpayvideoheaderVal.split('\n'),
+        "iboxpayvideobodyVal": COOKIE.iboxpayvideobodyVal.split('\n'),
     }
-    長度= XP_COOKIES.refreshtokenVal.length;
+    Length = XP_COOKIES.refreshtokenVal.length;
 }
-如果（！COOKIE.refreshtokenVal）{
-    如果（$ .isNode（））{
-        Object.keys（middlerefreshTOKEN）.forEach（（item）=> {
-            如果（middlerefreshTOKEN [item]）{
-                refreshtokenArr.push（middlerefreshTOKEN [item]）;
-            }
-        }）;
-        Object.keys（middleiboxpayvideoHEADER）.forEach（（item）=> {
-            如果（middleiboxpayvideoHEADER [item]）{
-                iboxpayvideoheaderArr.push（middleiboxpayvideoHEADER [item]）;
-            }
-        }）;
-        Object.keys（middleiboxpayvideoBODY）.forEach（（item）=> {
-            如果（middleiboxpayvideoBODY [item]）{
-                iboxpayvideobodyArr.push（middleiboxpayvideoBODY [item]）;
-            }
-        }）;
-    } 別的 {
-        iboxpayvideoheaderArr.push（$。getdata（“ iboxpayvideoheader”））;
-        iboxpayvideobodyArr.push（$。getdata（“ iboxpayvideobody”））;
+if (COOKIE.datas && COOKIE.datas[0].val != '') {
 
-        refreshtokenArr.push（$。getdata（“ refreshtoken”））;
+    iboxpayCount = COOKIE.settings.find(item => item.id === `iboxpayCount`);
+    iboxpayLIVE = COOKIE.settings.find(item => item.id === `iboxpayLIVE`);
+    iboxpayCASH = COOKIE.settings.find(item => item.id === `iboxpayCASH`);
+    iboxpayphone = COOKIE.settings.find(item => item.id === `iboxpayphone`);
+    iboxpaysms = COOKIE.settings.find(item => item.id === `iboxpaysms`);
 
-        //根據boxjs中設置的額外賬號數，添加存在的賬號數據進行任務處理
-        如果（“ iboxpayCASH”）{
-            現金= $ .getval（“ iboxpayCASH”）|| '0';
-        }
-        如果（“ iboxpayLIVE”）{
-            LIVE = $ .getval（“ iboxpayLIVE”）|| '1';
-        }
-        如果（“ iboxpayphone”）{
-            電話= $ .getval（“ iboxpayphone”）|| '0';
-        }
-        如果（“ iboxpaysms”）{
-            sms = $ .getval（“ iboxpaysms”）|| '0';
-        }
-        讓iboxpayCount =（$ .getval（'iboxpayCount'）||'1'）-0;
-        for（讓i = 2; i <= iboxpayCount; i ++）{
-            如果（$ .getdata（`refreshtoken $ {i}`））{
+    Length = iboxpayCount.val
+    LIVE = iboxpayLIVE.val
+    CASH = iboxpayCASH.val
+    phone = iboxpayphone.val
+    sms = iboxpaysms.val
 
-
-                iboxpayvideoheaderArr.push（$。getdata（`iboxpayvideoheader $ {i}`））;
-                iboxpayvideobodyArr.push（$。getdata（`iboxpayvideobody $ {i}`））;
-                refreshtokenArr.push（$。getdata（`refreshtoken $ {i}`））;;
-            }
-        }
-    }
-    長度= refreshtokenArr.length
 }
 
+if (!COOKIE.datas && !COOKIE.refreshtokenVal) {
+    if ($.isNode()) {
+        Object.keys(middlerefreshTOKEN).forEach((item) => {
+            if (middlerefreshTOKEN[item]) {
+                refreshtokenArr.push(middlerefreshTOKEN[item]);
+            }
+        });
+        Object.keys(middleiboxpayvideoHEADER).forEach((item) => {
+            if (middleiboxpayvideoHEADER[item]) {
+                iboxpayvideoheaderArr.push(middleiboxpayvideoHEADER[item]);
+            }
+        });
+        Object.keys(middleiboxpayvideoBODY).forEach((item) => {
+            if (middleiboxpayvideoBODY[item]) {
+                iboxpayvideobodyArr.push(middleiboxpayvideoBODY[item]);
+            }
+        });
+    } else {
+        iboxpayvideoheaderArr.push($.getdata("iboxpayvideoheader"));
+        iboxpayvideobodyArr.push($.getdata("iboxpayvideobody"));
 
-函數GetCookie（）{
-    如果（$ request && $ request.url.indexOf（“ nf-user-auth-web”）> = 0）{
-        const refreshtokenVal = JSON.parse（$ response.body）.data.refreshToken
+        refreshtokenArr.push($.getdata("refreshtoken"));
 
-        如果（refreshtokenVal）{
-            曲奇餅（）
+        // 根据boxjs中设置的额外账号数，添加存在的账号数据进行任务处理
+        if ("iboxpayCASH") {
+            CASH = $.getval("iboxpayCASH") || '0';
+        }
+        if ("iboxpayLIVE") {
+            LIVE = $.getval("iboxpayLIVE") || '1';
+        }
+        if ("iboxpayphone") {
+            phone = $.getval("iboxpayphone") || '0';
+        }
+        if ("iboxpaysms") {
+            sms = $.getval("iboxpaysms") || '0';
+        }
+        let iboxpayCount = ($.getval('iboxpayCount') || '1') - 0;
+        for (let i = 2; i <= iboxpayCount; i++) {
+            if ($.getdata(`refreshtoken${i}`)) {
 
-            函數cookie（）{
-                正文= $ .getdata（'refreshtoken'+ $ .idx）;
-                如果（身體）{
-                    如果（bodys.indexOf（refreshtokenVal）> = 0）{
-                        $ .log（
-                            `[$ {$。name + $ .idx}] refreshtokenVal已存在✅：refreshtokenVal：$ {refreshtokenVal}`
-                        ）;
-                        $ .msg（$。name + $ .idx，`refreshtokenVal已存在：🎉`，``）;
-                        $ .done（）;
-                    } else if（$ .idx ==''）{
-                        $ .idx = 2
-                        曲奇餅（）
-                    } 別的 {
-                        $ .idx = $ .idx +1
-                        曲奇餅（）
+
+                iboxpayvideoheaderArr.push($.getdata(`iboxpayvideoheader${i}`));
+                iboxpayvideobodyArr.push($.getdata(`iboxpayvideobody${i}`));
+                refreshtokenArr.push($.getdata(`refreshtoken${i}`));
+            }
+        }
+    }
+    Length = refreshtokenArr.length
+}
+
+
+function GetCookie() {
+    if ($request && $request.url.indexOf("nf-user-auth-web") >= 0) {
+        const refreshtokenVal = JSON.parse($response.body).data.refreshToken
+
+        if (refreshtokenVal) {
+            cookie()
+
+            function cookie() {
+                bodys = $.getdata('refreshtoken' + $.idx);
+                if (bodys) {
+                    if (bodys.indexOf(refreshtokenVal) >= 0) {
+                        $.log(
+                            `[${$.name + $.idx}] refreshtokenVal已存在✅: refreshtokenVal: ${refreshtokenVal}`
+                        );
+                        $.msg($.name + $.idx, `refreshtokenVal已存在: 🎉`, ``);
+                        $.done();
+                    } else if ($.idx == '') {
+                        $.idx = 2
+                        cookie()
+                    } else {
+                        $.idx = $.idx + 1
+                        cookie()
                     }
-                } 別的 {
+                } else {
                     {
-                        $ .setdata（refreshtokenVal，“ refreshtoken” + $ .idx）;
-                        $ .log（
-                            `[$ {$。name + $ .idx}]獲取refreshtokenVal✅：成功，refreshtokenVal：$ {refreshtokenVal}`
-                        ）;
-                        $ .msg（$。name + $ .idx，`獲取refreshtokenVal：成功🎉`，``）;
+                        $.setdata(refreshtokenVal, "refreshtoken" + $.idx);
+                        $.log(
+                            `[${$.name + $.idx}] 获取refreshtokenVal✅: 成功,refreshtokenVal: ${refreshtokenVal}`
+                        );
+                        $.msg($.name + $.idx, `获取refreshtokenVal: 成功🎉`, ``);
 
-                        $ .done（）;
+                        $.done();
                     }
                 };
             }
@@ -290,360 +324,378 @@ const iboxpayvideobodyArr = [];
     }
 
 
-    如果（$ request && $ request.url.indexOf（“ give_gold_coin_by_video”）> = 0）{
+    if ($request && $request.url.indexOf("give_gold_coin_by_video") >= 0) {
 
-        const iboxpayvideoheaderVal = JSON.stringify（$ request.headers）;
-        const iboxpayvideobodyVal = $ request.body;
+        const iboxpayvideoheaderVal = JSON.stringify($request.headers);
+        const iboxpayvideobodyVal = $request.body;
 
-        如果（iboxpayvideobodyVal）{
-            曲奇餅（）
+        if (iboxpayvideobodyVal) {
+            cookie()
 
-            函數cookie（）{
+            function cookie() {
 
-                標頭= $ .getdata（'iboxpayvideoheader'+ $ .idx）;
-                正文= $ .getdata（'iboxpayvideobody'+ $ .idx）;
+                headeres = $.getdata('iboxpayvideoheader' + $.idx);
+                bodys = $.getdata('iboxpayvideobody' + $.idx);
 
-                如果（正文和＆標題）{
+                if (bodys && headeres) {
 
-                    iboxpayvideoHeader = headeres.split（'＆'）;
-                    iboxpayvideoBody = bodys.split（'＆'）;
+                    iboxpayvideoHeader = headeres.split('&');
+                    iboxpayvideoBody = bodys.split('&');
 
-                    如果（iboxpayvideoHeader.length> = 10）{
+                    if (iboxpayvideoHeader.length >= 10) {
 
-                        如果（$ .idx ==''）{
-                            $ .idx = 2
-                            曲奇餅（）
-                        } 別的 {
-                            $ .idx = $ .idx +1
-                            曲奇餅（）
+                        if ($.idx == '') {
+                            $.idx = 2
+                            cookie()
+                        } else {
+                            $.idx = $.idx + 1
+                            cookie()
                         }
-                    }否則，如果（headeres.indexOf（iboxpayvideoheaderVal）> = 0）{
-                        $ .msg（'重複跳過'）;
-                        $ .done（）;
-                    } 別的 {
+                    } else if (headeres.indexOf(iboxpayvideoheaderVal) >= 0) {
+                        $.msg('重复跳过');
+                        $.done();
+                    } else {
 
-                        標頭= iboxpayvideoheaderVal +'＆'+標頭；
-                        $ .setdata（headeres，“ iboxpayvideoheader” + $ .idx）;
-                        $ .log（
-                            `[$ {$。name + $ .idx}]獲取iboxpayvideoheader $ {iboxpayvideoHeader.length + 1}✅：成功，iboxpayvideoheader $ {iboxpayvideoHeader.length + 1}：$ {iboxpayvideoheaderVal}`
-                        ）;
-                        $ .msg（$。name + $ .idx，`獲取iboxpayvideoheader $ {iboxpayvideoHeader.length + 1}✅：成功🎉`）
+                        headeres = iboxpayvideoheaderVal + '&' + headeres;
+                        $.setdata(headeres, "iboxpayvideoheader" + $.idx);
+                        $.log(
+                            `[${$.name + $.idx}] 获取iboxpayvideoheader${iboxpayvideoHeader.length+1}✅: 成功,iboxpayvideoheader${iboxpayvideoHeader.length+1}: ${iboxpayvideoheaderVal}`
+                        );
+                        $.msg($.name + $.idx, `获取iboxpayvideoheader${iboxpayvideoHeader.length+1}✅: 成功🎉`)
 
-                        正文= iboxpayvideobodyVal +'＆'+正文；
-                        $ .setdata（bodys，“ iboxpayvideobody” + $ .idx）;
-                        $ .log（
-                            `[$ {$。name + $ .idx}]獲取iboxpayvideobody $ {iboxpayvideoBody.length + 1}✅：成功，iboxpayvideobody $ {iboxpayvideoBody.length + 1}：$ {iboxpayvideobodyVal}`
-                        ）;
-                        $ .msg（$。name + $ .idx，`獲取iboxpayvideobody $ {iboxpayvideoBody.length + 1}✅：成功🎉`）
+                        bodys = iboxpayvideobodyVal + '&' + bodys;
+                        $.setdata(bodys, "iboxpayvideobody" + $.idx);
+                        $.log(
+                            `[${$.name + $.idx}] 获取iboxpayvideobody${iboxpayvideoBody.length+1}✅: 成功,iboxpayvideobody${iboxpayvideoBody.length+1}: ${iboxpayvideobodyVal}`
+                        );
+                        $.msg($.name + $.idx, `获取iboxpayvideobody${iboxpayvideoBody.length+1}✅: 成功🎉`)
 
-                        $ .done（）;
+                        $.done();
                     }
-                } 別的 {
-                    標頭= iboxpayvideoheaderVal;
-                    $ .setdata（headeres，“ iboxpayvideoheader” + $ .idx）;
-                    $ .log（
-                        `[$ {$。name + $ .idx}]獲取iboxpayvideoheader✅：成功，iboxpayvideoheader：$ {iboxpayvideoheaderVal}`
-                    ）;
-                    $ .msg（$。name + $ .idx，`獲取iboxpayvideoheader✅：成功🎉`）
+                } else {
+                    headeres = iboxpayvideoheaderVal;
+                    $.setdata(headeres, "iboxpayvideoheader" + $.idx);
+                    $.log(
+                        `[${$.name + $.idx}] 获取iboxpayvideoheader✅: 成功,iboxpayvideoheader: ${iboxpayvideoheaderVal}`
+                    );
+                    $.msg($.name + $.idx, `获取iboxpayvideoheader✅: 成功🎉`)
 
-                    正文= iboxpayvideobodyVal;
-                    $ .setdata（bodys，“ iboxpayvideobody” + $ .idx）;
-                    $ .log（
-                        `[$ {$。name + $ .idx}]獲取iboxpayvideobody✅：成功，iboxpayvideobody：$ {iboxpayvideobodyVal}`）;
-                    $ .msg（$。name + $ .idx，`獲取iboxpayvideobody✅：成功🎉`）
+                    bodys = iboxpayvideobodyVal;
+                    $.setdata(bodys, "iboxpayvideobody" + $.idx);
+                    $.log(
+                        `[${$.name + $.idx}] 获取iboxpayvideobody✅: 成功,iboxpayvideobody: ${iboxpayvideobodyVal}`);
+                    $.msg($.name + $.idx, `获取iboxpayvideobody✅: 成功🎉`)
 
-                    $ .done（）;
+                    $.done();
 
                 }
             }
         }
     }
 }
-console.log（
-    `==================腳本執行-北京時間（UTC + 8）：$ {new Date（
-    新的Date（）。getTime（）+
-    新的Date（）。getTimezoneOffset（）* 60 * 1000 +
+console.log(
+    `================== 脚本执行 - 北京时间(UTC+8)：${new Date(
+    new Date().getTime() +
+    new Date().getTimezoneOffset() * 60 * 1000 +
     8 * 60 * 60 * 1000
-  ）.toLocaleString（）} ===================== n
-）;
-console.log（
-    `============共$ {Length}個$ {$。name}賬號============ \ n
-）;
-console.log（`===========提現標準為：$ {CASH} ============ \ n`）;
-//如果（LIVE == 0）{
-// console.log（`===========看直播關閉，看視頻開啟============ \ n`）;
+  ).toLocaleString()} =====================\n`
+);
+console.log(
+    `============ 共 ${Length} 个${$.name}账号=============\n`
+);
+console.log(`============ 提现标准为：${CASH} =============\n`);
+//if (LIVE == 0) {
+// console.log(`============ 看直播关闭，看视频开启 =============\n`);
 //}
-如果（LIVE == 1）{
-    console.log（`===========看直播開啟，看視頻開啟============ \ n`）;
+if (LIVE == 1) {
+    console.log(`============ 看直播开启，看视频开启 =============\n`);
 }
-如果（LIVE == 2）{
-    console.log（`===========看直播開啟，看視頻關閉============ \ n`）;
+if (LIVE == 2) {
+    console.log(`============ 看直播开启，看视频关闭 =============\n`);
 }
-如果（sms> = 1）{
-    console.log（`============令牌獲取開啟============= \ n`）;
+if (sms >= 1) {
+    console.log(`============ TOKEN获取开启 =============\n`);
 }
-//時間
-nowTimes =新日期（
-    新的Date（）。getTime（）+
-    新的Date（）。getTimezoneOffset（）* 60 * 1000 +
+//时间
+nowTimes = new Date(
+    new Date().getTime() +
+    new Date().getTimezoneOffset() * 60 * 1000 +
     8 * 60 * 60 * 1000
-）;
+);
 //今天
-Y = nowTimes.getFullYear（）+'-';
-M =（nowTimes.getMonth（）+ 1 <10？'0'+（nowTimes.getMonth（）+ 1）：nowTimes.getMonth（）+ 1）+'-';
-D =（nowTimes.getDate（）<10？'0'+（nowTimes.getDate（））：nowTimes.getDate（））;
+Y = nowTimes.getFullYear() + '-';
+M = (nowTimes.getMonth() + 1 < 10 ? '0' + (nowTimes.getMonth() + 1) : nowTimes.getMonth() + 1) + '-';
+D = (nowTimes.getDate() < 10 ? '0' + (nowTimes.getDate()) : nowTimes.getDate());
 ddtime = Y + M + D;
-console.log（ddtime）
-//當前常量
-函數tts（inputTime）{
-    如果（$ .isNode（））{
-        TTS = Math.round（new Date（）。getTime（）+
-            新的Date（）。getTimezoneOffset（）* 60 * 1000）.toString（）;
-    } else TTS = Math.round（new Date（）。getTime（）+
-        new Date（）。getTimezoneOffset（）* 60 * 1000 + 8 * 60 * 60 * 1000）.toString（）;
-    返回TTS；
+console.log(ddtime)
+//当前时间戳
+function tts(inputTime) {
+    if ($.isNode()) {
+        TTS = Math.round(new Date().getTime() +
+            new Date().getTimezoneOffset() * 60 * 1000).toString();
+    } else TTS = Math.round(new Date().getTime() +
+        new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000).toString();
+    return TTS;
 };
-//當前10位飛行員
-函數ts（inputTime）{
-    如果（$ .isNode（））{
-        TS = Math.round（（new Date（）。getTime（）+
-            new Date（）。getTimezoneOffset（）* 60 * 1000）/ 1000）.toString（）;
-    } else TS = Math.round（（new Date（）。getTime（）+
-        新的Date（）。getTimezoneOffset（）* 60 * 1000 +
-        8 * 60 * 60 * 1000）/ 1000）.toString（）;
-    返回TS；
+//当前10位时间戳
+function ts(inputTime) {
+    if ($.isNode()) {
+        TS = Math.round((new Date().getTime() +
+            new Date().getTimezoneOffset() * 60 * 1000) / 1000).toString();
+    } else TS = Math.round((new Date().getTime() +
+        new Date().getTimezoneOffset() * 60 * 1000 +
+        8 * 60 * 60 * 1000) / 1000).toString();
+    return TS;
 };
-//今天0點體重有所改善
-函數daytime（inputTime）{
-    如果（$ .isNode（））{
+//今天0点时间戳时间戳
+function daytime(inputTime) {
+    if ($.isNode()) {
         DAYTIME =
-            new Date（new Date（）。toLocaleDateString（））。getTime（）-8 * 60 * 60 * 1000;
-    } else DAYTIME = new Date（new Date（）。toLocaleDateString（））。getTime（）;
-    返回DAYTIME；
+            new Date(new Date().toLocaleDateString()).getTime() - 8 * 60 * 60 * 1000;
+    } else DAYTIME = new Date(new Date().toLocaleDateString()).getTime();
+    return DAYTIME;
 };
-//格式化格式化日期
-函數時間（inputTime）{
-    如果（$ .isNode（））{
-        var date = new Date（inputTime + 8 * 60 * 60 * 1000）;
-    } else var date = new Date（inputTime）;
-    Y = date.getFullYear（）+'-';
-    M =（date.getMonth（）+ 1 <10？'0'+（date.getMonth（）+ 1）：date.getMonth（）+ 1）+'-';
-    D = date.getDate（）+'';
-    h = date.getHours（）+'：';
-    m = date.getMinutes（）+'：';
-    s = date.getSeconds（）;
-    返回Y + M + D + h + m + s;
+//时间戳格式化日期
+function time(inputTime) {
+    if ($.isNode()) {
+        var date = new Date(inputTime + 8 * 60 * 60 * 1000);
+    } else var date = new Date(inputTime);
+    Y = date.getFullYear() + '-';
+    M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+    D = date.getDate() + ' ';
+    h = date.getHours() + ':';
+    m = date.getMinutes() + ':';
+    s = date.getSeconds();
+    return Y + M + D + h + m + s;
 };
-//隨機udid大寫
-函數udid（）{
+//随机udid 大写
+function udid() {
     var s = [];
-    var hexDigits =“ 0123456789ABCDEF”;
-    對於（var i = 0; i <36; i ++）{
-        s [i] = hexDigits.substr（Math.floor（Math.random（）* 0x10），1）;
+    var hexDigits = "0123456789ABCDEF";
+    for (var i = 0; i < 36; i++) {
+        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
     }
-    s [14] =“ 4”; // time_hi_and_version字段的第12-15位為0010
-    s [19] = hexDigits.substr（（s [19]＆0x3）| 0x8，1）; // clock_seq_hi_and_reserved的第6-7位為01
-    s [8] = s [13] = s [18] = s [23] =“-”；
-    var uuid = s.join（“”）;
-    返回uuid;
+    s[14] = "4"; // bits 12-15 of the time_hi_and_version field to 0010
+    s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1); // bits 6-7 of the clock_seq_hi_and_reserved to 01
+    s[8] = s[13] = s[18] = s[23] = "-";
+    var uuid = s.join("");
+    return uuid;
 }
-//隨機研究小寫
-函數udid2（）{
-    函數S4（）{
-        return（（（（1 + Math.random（））* 0x10000）| 0）.toString（16）.substring（1）;
+//随机udid 小写
+function udid2() {
+    function S4() {
+        return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
     }
-    返回（S4（）+ S4（）+“-” + S4（）+“-” + S4（）+“-” + S4（）+“-” + S4（）+ S4（）+ S4（）） ;
+    return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
 }
-//編碼
-函數encodeUnicode（str）{
+//编码
+function encodeUnicode(str) {
     var res = [];
-    對於（var i = 0; i <str.length; i ++）{
-        res [i] =（“ 00” + str.charCodeAt（i）.toString（16））。slice（-4）;
+    for (var i = 0; i < str.length; i++) {
+        res[i] = ("00" + str.charCodeAt(i).toString(16)).slice(-4);
     }
-    返回“ \\ u” + res.join（“ \\ u”）;
+    return "\\u" + res.join("\\u");
 }
-//解碼
-函數解碼Unicode（str）{
-    str = str.replace（/ \\ / g，“％”）;
-    返回unescape（str）;
+//解码
+function decodeUnicode(str) {
+    str = str.replace(/\\/g, "%");
+    return unescape(str);
 }
 
 
-let isGetCookie = typeof $ request！=='未定義'
-如果（isGetCookie）{
-    GetCookie（）
-    $ .done（）;
-} 別的 {
-    ！（異步（）=> {
-        如果（sms> = 1）{
-            等待getTOKEN（）;
-        }否則等待all（）;
-        如果（HBY == 1）{
-            等待$ .wait（500）
+let isGetCookie = typeof $request !== 'undefined'
+if (isGetCookie) {
+    GetCookie()
+    $.done();
+} else {
+    !(async () => {
+        if (sms >= 1) {
+            await getTOKEN();
+        } else await all();
+        if (HBY == 1) {
+            await $.wait(500)
         }
 
-        等待msgShow（）;
-    }）（）
-    .catch（（e）=> {
-            $ .log（''，`❌$ {$。name}，失敗！原因：$ {e}！`，''）
-        }）
-        .finally（（）=> {
-            $ .done（）;
-        }）
+        await msgShow();
+    })()
+    .catch((e) => {
+            $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
+        })
+        .finally(() => {
+            $.done();
+        })
 }
-異步功能all（）{
-    如果（！Length）{
-        $ .msg（
-            $ .name，
-            '提示：⚠️請點擊前往獲取https://apps.apple.com/cn/app/%E7%AC%91%E8%B0%B1/id1487075970\n'，
-            'https://apps.apple.com/cn/app/%E7%AC%91%E8%B0%B1/id1487075970'，{
-                “打開網址”：“ https://apps.apple.com/cn/app/%E7%AC%91%E8%B0%B1/id1487075970”
+async function all() {
+    if (!Length) {
+        $.msg(
+            $.name,
+            '提示：⚠️请点击前往获取https://apps.apple.com/cn/app/%E7%AC%91%E8%B0%B1/id1487075970\n',
+            'https://apps.apple.com/cn/app/%E7%AC%91%E8%B0%B1/id1487075970', {
+                "open-url": "https://apps.apple.com/cn/app/%E7%AC%91%E8%B0%B1/id1487075970"
             }
-        ）;
-        返回;
+        );
+        return;
     }
-    for（令i = 0; i <長度; i ++）{
-
-        如果（COOKIE.refreshtokenVal）{
-
-            refreshtokenVal = XP_COOKIES.refreshtokenVal [i];
-            iboxpayvideoheaderVal = XP_COOKIES.iboxpayvideoheaderVal [i];
-            iboxpayvideobodyVal = XP_COOKIES.iboxpayvideobodyVal [i];
-        }
-        如果（！COOKIE.refreshtokenVal）{
-
-            refreshtokenVal = refreshtokenArr [i];
-            iboxpayvideoheaderVal = iboxpayvideoheaderArr [i];
-            iboxpayvideobodyVal = iboxpayvideobodyArr [i];
-        }
-
-        做RT = Math.floor（Math.random（）* 35000）;
-        而（RT <30000）
-
-        做VT = Math.floor（Math.random（）* 35000）;
-        而（VT <30000）
-        O =（`$ {$。name +（i + 1）}🔔`）;
-        等待console.log（`------------------------- \ n \n🔔開始運行【$ {$。name +（i + 1）} 】`）
+    for (let i = 0; i < Length; i++) {
+        if (COOKIE.datas && COOKIE.datas[0].val != '') {
 
 
-
-        等待refreshtoken（）; //更新代幣       
-        讓cookie_is_live =等待用戶（i + 1）; //用戶名
-        如果（！cookie_is_live）{
-            繼續;
-        }
-        等待hdid（）; //活動ID
-        等待goldcoin（）; //金幣信息
-        等待coin（）; //賬戶信息
-        等待sylist（）; //收益清單
-        等待splimit（）; //視頻上限
-        等待newcashlist（）; //提現查詢
-        等待Cashlist（）; //今天提現查詢
-        if（！cashcs.amount && CASH> = 1 && CASH <= 100 && $ .coin.data.balance / 100> = CASH）{
-            等待withdraw（）; //提現
-        }
-
-        如果（！cashcs.amount &&現金== 888）{
-
-            如果（$ .coin.data.balance / 100> = 100）{
-                現金= 100
-            } else if（$ .coin.data.balance / 100> = 50）{
-                現金= 50
-            } else if（$ .coin.data.balance / 100> = 30）{
-                現金= 30
-            } else if（$ .coin.data.balance / 100> = 15）{
-                現金= 15
-            } else if（$ .coin.data.balance / 100> = 1）{
-                現金= 1
+            if (i == 0) {
+                op = ``
+            } else {
+                op = i + 1
             }
 
-            如果（現金！= 888）{
-                等待withdraw（）; //提現
+            refreshtokens = COOKIE.datas.find(item => item.key === `refreshtoken${op}`);
+            iboxpayvideoheader = COOKIE.datas.find(item => item.key === `iboxpayvideoheader${op}`);
+            iboxpayvideobody = COOKIE.datas.find(item => item.key === `iboxpayvideobody${op}`);
+
+            refreshtokenVal = refreshtokens.val;
+            iboxpayvideoheaderVal = iboxpayvideoheader.val;
+            iboxpayvideobodyVal = iboxpayvideobody.val;
+
+        }
+
+        if (COOKIE.refreshtokenVal) {
+
+            refreshtokenVal = XP_COOKIES.refreshtokenVal[i];
+            iboxpayvideoheaderVal = XP_COOKIES.iboxpayvideoheaderVal[i];
+            iboxpayvideobodyVal = XP_COOKIES.iboxpayvideobodyVal[i];
+        }
+        if (!COOKIE.datas && !COOKIE.refreshtokenVal) {
+
+            refreshtokenVal = refreshtokenArr[i];
+            iboxpayvideoheaderVal = iboxpayvideoheaderArr[i];
+            iboxpayvideobodyVal = iboxpayvideobodyArr[i];
+        }
+
+        do RT = Math.floor(Math.random() * 35000);
+        while (RT < 30000)
+
+        do VT = Math.floor(Math.random() * 35000);
+        while (VT < 30000)
+        O = (`${$.name + (i + 1)}🔔`);
+        await console.log(`-------------------------\n\n🔔开始运行【${$.name+(i+1)}】`)
+
+
+
+        await refreshtoken(); //更新TOKEN       
+        let cookie_is_live = await user(i + 1); //用户名
+        if (!cookie_is_live) {
+            continue;
+        }
+        await hdid(); //活动id
+        await goldcoin(); //金币信息
+        await coin(); //账户信息
+        await sylist(); //收益列表
+        await splimit(); //视频上限
+        await newcashlist(); //提现查询
+        await cashlist(); //今日提现查询
+        if (!cashcs.amount && CASH >= 1 && CASH <= 100 && $.coin.data.balance / 100 >= CASH) {
+            await withdraw(); //提现
+        }
+
+        if (!cashcs.amount && CASH == 888) {
+
+            if ($.coin.data.balance / 100 >= 100) {
+                CASH = 100
+            } else if ($.coin.data.balance / 100 >= 50) {
+                CASH = 50
+            } else if ($.coin.data.balance / 100 >= 30) {
+                CASH = 30
+            } else if ($.coin.data.balance / 100 >= 15) {
+                CASH = 15
+            } else if ($.coin.data.balance / 100 >= 1) {
+                CASH = 1
+            }
+
+            if (CASH != 888) {
+                await withdraw(); //提现
             }
         }
 
-        如果（LIVE> = 1 && nowTimes.getHours（）> = 8 && nowTimes.getHours（）<= 23 && $ .sylist.resultCode && livecs <20）{
-            等待livelist（）; //直播節目表
-            如果（liveIdcd> = 1）{
-                dd = liveIdcd * 35-34
-                console.log（`📍本次直播運行需要$ {dd}秒`+'\ n'）
+        if (LIVE >= 1 && nowTimes.getHours() >= 8 && nowTimes.getHours() <= 23 && $.sylist.resultCode && livecs < 10) {
+            await liveslist(); //直播节目表
+            if (liveIdcd >= 1) {
+                dd = liveIdcd * 35 - 34
+                console.log(`📍本次直播运行需要${dd}秒` + '\n')
 
-                等待生命（）; //看直播
-                等待$ .wait（dd * 1000）
+                await lives(); //看直播
+                await $.wait(dd * 1000)
             }
         }
 
-        如果（iboxpayvideoheaderVal && iboxpayvideobodyVal && iboxpayvideoheaderVal！=''&& iboxpayvideobodyVal！=``&& LIVE！= 2 &&（$ .splimit.data.isUperLimit == false || LIVE == 888））{
+        if (iboxpayvideoheaderVal && iboxpayvideobodyVal && iboxpayvideoheaderVal != '' && iboxpayvideobodyVal != '' && LIVE != 2 && ($.splimit.data.isUperLimit == false || LIVE == 888)) {
 
-            videoHEADER = iboxpayvideoheaderVal.split（'＆'）;
-            videoBODY = iboxpayvideobodyVal.split（'＆'）;
-            console.log（`📍此賬號共有$ {videoHEADER.length}個body` +'\ n'）
+            videoHEADER = iboxpayvideoheaderVal.split('&');
+            videoBODY = iboxpayvideobodyVal.split('&');
+            console.log(`📍此账号共有${videoHEADER.length}个body` + '\n')
 
-            等待videoo（）; //視頻
+            await videoo(); //视频o
 
-            如果（LIVES！= 2 && videoHEADER.length> = 2）{
-                等待$ .wait（VT）
-                tt = videoHEADER.length * 35-34
-                console.log（`📍本次視頻運行需要$ {tt}秒`+'\ n'）
+            if (LIVES != 2 && videoHEADER.length >= 2) {
+                await $.wait(VT)
+                tt = videoHEADER.length * 35 - 34
+                console.log(`📍本次视频运行需要${tt}秒` + '\n')
 
-                等待video（）; //視頻
-                等待$ .wait（tt * 1000）
+                await video(); //视频
+                await $.wait(tt * 1000)
 
             }
 
-        }否則，如果（！iboxpayvideoheaderVal &&！iboxpayvideobodyVal && iboxpayvideoheaderVal ==''&& iboxpayvideobodyVal ==））{
-            console.log（'視頻獎勵：未獲取視頻ck \ n'）;
-            $ .message + ='【視頻獎勵】：未獲取視頻ck \ n'
-        }否則，如果（LIVE == 2）{
-            console.log（'視頻獎勵：視頻已設置關閉\ n'）;
-            $ .message + ='【視頻獎勵】：視頻已設置關閉\ n'
-        }否則，如果（$ .splimit.data.isUperLimit！= false）{
-            console.log（'視頻獎勵：視頻獎勵達到上限\ n'）;
-            $ .message + ='【視頻獎勵】：視頻獎勵達到上限\ n'
+        } else if (!iboxpayvideoheaderVal || !iboxpayvideobodyVal || iboxpayvideoheaderVal == '' || iboxpayvideobodyVal == '') {
+            console.log('视频奖励：未获取视频ck\n');
+            $.message += '【视频奖励】：未获取视频ck\n'
+        } else if (LIVE == 2) {
+            console.log('视频奖励：视频已设置关闭\n');
+            $.message += '【视频奖励】：视频已设置关闭\n'
+        } else if ($.splimit.data.isUperLimit != false) {
+            console.log('视频奖励：视频奖励达到上限\n');
+            $.message += '【视频奖励】：视频奖励达到上限\n'
         }
-        console.log（`$ {GXRZ} \ n`）;
-        $ .message + =`$ {GXRZ} \ n`
+        console.log(`${GXRZ}\n`);
+        $.message += `${GXRZ}\n`
     }
 }
 //通知
-函數msgShow（）{
-    返回新的Promise（異步解析=> {
-        如果（notifyInterval！= 1）{
-            console.log（$。name +'\ n'+ $ .message）;
+function msgShow() {
+    return new Promise(async resolve => {
+        if (notifyInterval != 1) {
+            console.log($.name + '\n' + $.message);
         }
-        如果（notifyInterval == 1）{
-            $ .msg（$。name，``，$ .message）;
+        if (notifyInterval == 1) {
+            $.msg($.name, ``, $.message);
         }
-        if（notifyInterval == 2 &&（nowTimes.getHours（）=== 12 || nowTimes.getHours（）=== 23）&&（nowTimes.getMinutes（）> = 0 && nowTimes.getMinutes（）<= 10）） {
-            $ .msg（$。name，``，$ .message）;
+        if (notifyInterval == 2 && (nowTimes.getHours() === 12 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
+            $.msg($.name, ``, $.message);
         }
-        if（notifyInterval == 3 &&（nowTimes.getHours（）=== 6 || nowTimes.getHours（）=== 12 || nowTimes.getHours（）=== 18 || nowTimes.getHours（）=== 23 ）&&（nowTimes.getMinutes（）> = 0 && nowTimes.getMinutes（）<= 10））{
-            $ .msg（$。name，``，$ .message）;
+        if (notifyInterval == 3 && (nowTimes.getHours() === 6 || nowTimes.getHours() === 12 || nowTimes.getHours() === 18 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
+            $.msg($.name, ``, $.message);
         }
-        if（notifyttt == 1 && $ .isNode（）&&（nowTimes.getHours（）=== 12 || nowTimes.getHours（）=== 23）&&（nowTimes.getMinutes（）> = 0 && nowTimes.getMinutes（ ）<= 10））
-            等待notify.sendNotify（$。name，$ .message）;
-        解決（）
-    }）
+        if (notifyttt == 1 && $.isNode() && (nowTimes.getHours() === 12 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10))
+            await notify.sendNotify($.name, $.message);
+        resolve()
+    })
 }
 
 
-//令牌獲取  
-函數getTOKEN（timeout = 0）{
-    返回新的Promise（（resolve）=> {
-        setTimeout（（）=> {
+//TOKEN获取  
+function getTOKEN(timeout = 0) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
 
-            getTOKENbodyVal =`{“ userPhone”：“ $ {phone}”，“ smsCode”：“ $ {sms}”，“ source”：“ VEISHOP_APP_IOS”}`
-            讓url = {
-                網址：`https：// veishop.iboxpay.com / nf_gateway / nf-user-auth-web / ignore_tk / veishop / v1 / app_register_by_phone.json`，
-                標頭：{
-                    “連接”：“保持活動”，
-                    “ Accept-Encoding”：“ gzip，deflate，br”，
-                    “ version”：“ 1.5.0”，
-                    “ mchtNo”：“ 100529600058887”，
-                    “ Content-Type”：“ application / json; charset = utf-8”，
-                    “源”：“ VEISHOP_APP_IOS”，
-                    “用戶代理”：“ VeiShop，1.5.0（iOS，14.2，zh_CN，Apple，iPhone，）”，
-                    “ X-User-Agent”：“ VeiShop，1.5.0（iOS，14.2，zh_CN，Apple，iPhone，）”，
+            getTOKENbodyVal = `{"userPhone":"${phone}","smsCode":"${sms}","source":"VEISHOP_APP_IOS"}`
+            let url = {
+                url: `https://veishop.iboxpay.com/nf_gateway/nf-user-auth-web/ignore_tk/veishop/v1/app_register_by_phone.json`,
+                headers: {
+                    "Connection": "keep-alive",
+                    "Accept-Encoding": "gzip, deflate, br",
+                    "version": "1.5.0",
+                    "mchtNo": "100529600058887",
+                    "Content-Type": "application/json; charset=utf-8",
+                    "source": "VEISHOP_APP_IOS",
+                    "User-Agent": "VeiShop, 1.5.0 (iOS, 14.2, zh_CN, Apple, iPhone, )",
+                    "X-User-Agent": "VeiShop, 1.5.0 (iOS, 14.2, zh_CN, Apple, iPhone, )",
                     "traceid": "30000000000000000000" + tts() + "000000000000",
                     "Host": "veishop.iboxpay.com",
                     "Accept-Language": "zh-Hans-CN;q=1",
@@ -839,10 +891,8 @@ function hdid(timeout = 0) {
                     if ($.hdid.resultCode == 1) {
                         spid = $.hdid.data.everyDayActivityList.find(item => item.actTypeId === 9)
                         zbid = $.hdid.data.everyDayActivityList.find(item => item.actTypeId === 10)
-                        //console.log(spid.actName + 'ID：' + spid.actId + '\n' +
-                        //zbid.actName + 'ID：' + zbid.actId + '\n');
-                        //$.message += '【' + spid.actName + 'ID】：' + spid.actId + '\n' +
-                        //'【' + zbid.actName + 'ID】：' + zbid.actId + '\n';
+                        console.log(spid.actName + 'ID：' + spid.actId + '\n');
+                        $.message += '【' + spid.actName + 'ID】：' + spid.actId + '\n';
                     }
 
                 } catch (e) {
@@ -902,11 +952,11 @@ function videoo(timeout = 0) {
             videoHEADER1 = videoHEADER[0].replace(`${token}`, `${TOKEN}`)
 
             SPID = videoBODY[0].split(`"actId":"`)[1].split(`"}`)[0]
-            videoBODY1 = videoBODY[0].replace(`${SPID}`, `${spid.actId}`)
+           
             let url = {
                 url: `https://veishop.iboxpay.com/nf_gateway/nf_customer_activity/day_cash/v1/give_gold_coin_by_video.json`,
                 headers: JSON.parse(videoHEADER1),
-                body: videoBODY1,
+                body: videoBODY[0],
             }
             $.post(url, async (err, resp, data) => {
                 try {
@@ -914,15 +964,20 @@ function videoo(timeout = 0) {
                     $.videoo = JSON.parse(data);
                     if ($.videoo.resultCode == 0) {
                         LIVES = 2
+                        if (SPID != spid.actId) {
 
-                        if ($.videoo.errorCode == "GATEWAY-ERROR-002") {
+                            console.log('视频奖励：⚠️视频CK已过期，请重新获取\n');
+                            $.message += '【视频奖励】：⚠️视频CK已过期，请重新获取\n'
+
+                        }else if ($.videoo.errorCode == "GATEWAY-ERROR-002") {
                             console.log('视频奖励：⚠️进入冷却中......\n');
                             $.message += '【视频奖励】：⚠️进入冷却中......\n'
-                        }
-
-                        if ($.videoo.errorCode == "GATEWAY-ERROR-003") {
+                        } else if ($.videoo.errorCode == "GATEWAY-ERROR-003") {
                             console.log('视频奖励：⚠️TOKEN失效\n');
                             $.message += '【视频奖励】：⚠️TOKEN失效\n'
+                        } else {
+                            console.log(`视频奖励：⚠️${$.videoo.errorCode}\n`);
+                            $.message += `【视频奖励】：⚠️${$.videoo.errorCode}\n`
                         }
 
                     }
@@ -957,14 +1012,11 @@ function video(timeout = 0) {
                 setTimeout(() => {
                     token = videoHEADER[i].split(`"token":"`)[1].split(`",`)[0]
                     videoHEADER2 = videoHEADER[i].replace(`${token}`, `${TOKEN}`)
-                    SPID = videoBODY[i].split(`"actId":"`)[1].split(`"}`)[0]
-                    videoBODY2 = videoBODY[i].replace(`${SPID}`, `${spid.actId}`)
-
-
+                    //SPID = videoBODY[i].split(`"actId":"`)[1].split(`"}`)[0]
                     let url = {
                         url: `https://veishop.iboxpay.com/nf_gateway/nf_customer_activity/day_cash/v1/give_gold_coin_by_video.json`,
                         headers: JSON.parse(videoHEADER2),
-                        body: videoBODY2,
+                        body: videoBODY[i],
                     }
                     $.post(url, async (err, resp, data) => {
                         try {
